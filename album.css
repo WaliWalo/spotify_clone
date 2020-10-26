@@ -1,0 +1,98 @@
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.nav-color {
+  background: #040404;
+}
+
+.navbar-brand img {
+  height: 3.09rem;
+}
+
+header {
+  margin-left: 272px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+header i {
+  font-size: 30px;
+  color: black;
+  margin: 10px;
+  z-index: 99999;
+}
+
+.bg-head {
+  background: hsla(339, 100%, 55%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(339, 100%, 55%, 1) 0%,
+    hsla(197, 100%, 64%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(339, 100%, 55%, 1) 0%,
+    hsla(197, 100%, 64%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(339, 100%, 55%, 1) 0%,
+    hsla(197, 100%, 64%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff1b6b", endColorstr="#45caff", GradientType=1 );
+}
+
+main .container {
+  margin-left: 290px;
+}
+
+main .container .row img:first-of-type {
+  width: 230px;
+  height: 230px;
+}
+
+.album {
+  margin: 10px;
+}
+
+.album div:first-of-type {
+  margin-top: 50px;
+  font-weight: 500;
+}
+
+.album div:nth-of-type(2) {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+i.far.fa-play-circle,
+i.far.fa-heart,
+i.fas.fa-ellipsis-h {
+  margin: 10px;
+  font-size: 50px;
+}
+
+table .container {
+  margin-left: 0px;
+}
+
+footer {
+  background-color: #282828;
+  padding: 30px;
+}
+
+footer i {
+  color: #b3b3b3;
+  margin: 10px;
+}
