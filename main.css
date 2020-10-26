@@ -16,3 +16,24 @@
 .navbar-brand img {
   height: 3.09rem;
 }
+
+header {
+  margin-left: 272px;
+  background-color: #040404;
+}
+
+header i {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+
+footer {
+  background-color: #282828;
+  padding: 30px;
+}
+
+footer i {
+  color: #b3b3b3;
+  margin: 10px;
+}
