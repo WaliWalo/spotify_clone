@@ -27,3 +27,13 @@ header i {
   color: white;
   margin: 10px;
 }
+
+footer {
+  background-color: #282828;
+  padding: 30px;
+}
+
+footer i {
+  color: #b3b3b3;
+  margin: 10px;
+}
