@@ -34,7 +34,6 @@ body {
   height: 3.09rem;
 }
 
-
 #active {
   background: #282828;
   color: #fff !important;
@@ -134,7 +133,11 @@ nav h1 {
   padding: 4px 0;
   -webkit-box-flex: 1;
   -ms-flex: 1;
-  f {
+  margin-left: 272px;
+  background-color: #040404;
+}
+
+header {
   margin-left: 272px;
   background-color: #040404;
 }
@@ -153,9 +156,4 @@ footer {
 footer i {
   color: #b3b3b3;
   margin: 10px;
-}
-
-header {
-  margin-left: 272px;
-  background-color: #040404;
 }
