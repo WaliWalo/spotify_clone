@@ -1,12 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- font-awesome CSS -->
@@ -17,8 +20,12 @@
     <!-- main CSS -->
     <link rel="stylesheet" href="main.css">
 
+  
+
+
     <title>Hello, world!</title>
-</head>
+  </head>
+
 
 <body>
     <nav class="vertical-nav text-white nav-color" id="sidebar">
@@ -168,19 +175,108 @@
                 </a>
             </div>
         </div>
-    </nav>
 
+ 
+
+    </nav>
+    <header class="fixed-top">
+      <div class="container d-flex">
+        <div class="container d-flex">
+          <i class="fas fa-arrow-left"></i> <i class="fas fa-arrow-right"></i>
+        </div>
+        <div class="container d-flex justify-content-end m-2">
+          <button class="btn btn-dark mr-2">Upgrade Now</button>
+          <div class="dropdown">
+            <button
+              class="btn btn-dark dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Hung Jin
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Account</a>
+              <a class="dropdown-item" href="#">Profile</a>
+              <hr />
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <footer class="fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <div class="container d-flex justify-content-center">
+              <div>
+                <i class="fas fa-random"></i><i class="fas fa-step-backward"></i
+                ><i class="fas fa-play"></i><i class="fas fa-step-forward"></i
+                ><i class="fas fa-redo"></i>
+              </div>
+            </div>
+            <div class="container d-flex justify-content-center">
+              <div class="text-light">1:20</div>
+              <div
+                class="progress m-2 bg-dark"
+                style="height: 5px; width: 300px"
+              >
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  style="width: 25%"
+                  aria-valuenow="25"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="text-light">3:35</div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="container d-flex">
+              <i class="fas fa-list"></i>
+              <i class="fas fa-desktop"></i>
+              <i class="fas fa-volume-up"></i>
+              <div class="mt-2">
+                <div
+                  class="progress m-2 bg-dark"
+                  style="height: 5px; width: 100px"
+                >
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 25%"
+                    aria-valuenow="25"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
