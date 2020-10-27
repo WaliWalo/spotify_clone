@@ -10,174 +10,203 @@
 
     <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
     <!-- font-awesome CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
     <!-- Spotify font-->
-    <link href="//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold"
-        rel="stylesheet" type="text/css" />
+    <link
+      href="//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold"
+      rel="stylesheet"
+      type="text/css"
+    />
     <!-- main CSS -->
-    <link rel="stylesheet" href="main.css">
-
-  
-
+    <link rel="stylesheet" href="main.css" />
 
     <title>Hello, world!</title>
   </head>
 
-
-<body>
+  <body>
     <nav class="vertical-nav text-white nav-color" id="sidebar">
-        <div class="pt-3 px-3 mb-3 ">
-            <a class="navbar-brand" href="#">
-                <img src="images\logo\Spotify-logo.png" alt="spotify logo">
-            </a>
+      <div class="pt-3 px-3 mb-3">
+        <a class="navbar-brand" href="#">
+          <img src="images\logo\Spotify-logo.png" alt="spotify logo" />
+        </a>
+      </div>
+
+      <ul class="nav flex-column mb-0">
+        <li class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle" id="active">
+            <div class="icon d-inline-block">
+              <svg
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item px-2">
+          <a href="#" class="nav-link text-white">
+            <div class="icon d-inline-block">
+              <svg
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <span>Search</span>
+          </a>
+        </li>
+        <li class="nav-item px-2">
+          <a href="#" class="nav-link">
+            <div class="icon d-inline-block">
+              <svg
+                viewBox="0 0 512 512"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </div>
+            <span>Your Library</span>
+          </a>
+        </li>
+      </ul>
+
+      <!---Playlists::::::::::::::::::::::::::::::::::::-->
+      <h1
+        class="px-4 font-weight-bold text-uppercase px-3 nav-header pt-4 mb-3 mb-0"
+      >
+        Playlists
+      </h1>
+
+      <div class="nav-item px-4">
+        <button class="sp-btn">
+          <div class="icon d-inline-block bt">
+            <svg
+              class="btn-svg"
+              shape-rendering="crispEdges"
+              viewBox="0 0 36 36"
+            >
+              <path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path>
+            </svg>
+          </div>
+          <span>Create Playlist</span>
+        </button>
+      </div>
+      <div class="nav-item px-4">
+        <a href="#" class="nav-link px-0">
+          <div class="icon d-inline-block">
+            <div class="heart spoticon-heart-active-16">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+          <span>Your Library</span>
+        </a>
+      </div>
+      <!---divider:::::::::::::::::::::::::::::::::::::::::::-->
+      <div class="px-4">
+        <hr class="Rootlist__divider mt-1 mb-2" />
+      </div>
+
+      <!--Albums:::::::::::::::::::::::::::::::::::::::-->
+
+      <div class="nav flex-column mb-0 overflow">
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Ad Alta Intensità</span>
+          </a>
         </div>
-
-        <ul class="nav flex-column mb-0 ">
-            <li class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle " id="active">
-                    <div class="icon d-inline-block ">
-                        <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li class="nav-item px-2">
-                <a href="#" class="nav-link text-white">
-                    <div class="icon d-inline-block ">
-                        <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
-                                fill="currentColor" fill-rule="evenodd"></path>
-                        </svg>
-                    </div>
-                    <span>Search</span>
-                </a>
-            </li>
-            <li class="nav-item px-2">
-                <a href="#" class="nav-link ">
-                    <div class="icon d-inline-block ">
-                        <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
-                                fill="currentColor"></path>
-                        </svg>
-                    </div>
-                    <span>Your Library</span>
-                </a>
-            </li>
-        </ul>
-
-
-        <!---Playlists::::::::::::::::::::::::::::::::::::-->
-        <h1 class="px-4 font-weight-bold text-uppercase px-3 nav-header pt-4 mb-3 mb-0">Playlists</h1>
-
-        <div class="nav-item px-4">
-            <button class="sp-btn">
-                <div class="icon d-inline-block bt">
-                    <svg class="btn-svg" shape-rendering="crispEdges" viewBox="0 0 36 36">
-                        <path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path>
-                    </svg>
-                </div>
-                <span>Create Playlist</span>
-            </button>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Whisky Blues</span>
+          </a>
         </div>
-        <div class="nav-item px-4">
-            <a href="#" class="nav-link px-0">
-                <div class="icon d-inline-block ">
-                    <div class="heart spoticon-heart-active-16">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                </div>
-                <span>Your Library</span>
-            </a>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>+18 part.2</span>
+          </a>
         </div>
-        <!---divider:::::::::::::::::::::::::::::::::::::::::::-->
-        <div class="px-4">
-            <hr class="Rootlist__divider mt-1 mb-2">
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Phonk/wave/stance...</span>
+          </a>
         </div>
-
-        <!--Albums:::::::::::::::::::::::::::::::::::::::-->
-
-        <div class="nav flex-column mb-0 overflow">
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Ad Alta Intensità</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Whisky Blues</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>+18 part.2</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Phonk/wave/stance...</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>lofi hip hop beats</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Ad Alta Intensità</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Whisky Blues</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>workout</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Phonk/wave/stance...</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>lofi hip hop beats</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Ad Alta Intensità</span>
-                </a>
-            </div>
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Whisky Blues</span>
-                </a>
-            </div>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>lofi hip hop beats</span>
+          </a>
         </div>
-
-        <div class="nav flex-column mb-0 overflow">
-            <div class="nav-item px-2 d-flex flex-column justify-content-center">
-                <a href="#" class="nav-link rounded align-middle">
-                    <span>Ad Alta Intensità</span>
-                </a>
-            </div>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Ad Alta Intensità</span>
+          </a>
         </div>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Whisky Blues</span>
+          </a>
+        </div>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>workout</span>
+          </a>
+        </div>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Phonk/wave/stance...</span>
+          </a>
+        </div>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>lofi hip hop beats</span>
+          </a>
+        </div>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Ad Alta Intensità</span>
+          </a>
+        </div>
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Whisky Blues</span>
+          </a>
+        </div>
+      </div>
 
-
-
+      <div class="nav flex-column mb-0 overflow">
+        <div class="nav-item px-2 d-flex flex-column justify-content-center">
+          <a href="#" class="nav-link rounded align-middle">
+            <span>Ad Alta Intensità</span>
+          </a>
+        </div>
+      </div>
     </nav>
     <header class="fixed-top">
       <div class="container d-flex">
@@ -207,9 +236,9 @@
         </div>
       </div>
     </header>
-  
-  <!-- albums -->
-    <div class="container">
+
+    <!-- albums -->
+    <div class="container albums">
       <!--first-row-->
       <div class="row row-cols-6 row-cols-md-6 row-cols-lg-6 row-cols-xl-6">
         <div class="col">
@@ -289,9 +318,7 @@
         </div>
       </div>
     </div>
-  
-  
-  
+
     <footer class="fixed-bottom">
       <div class="container">
         <div class="row">

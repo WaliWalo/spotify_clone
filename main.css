@@ -1,6 +1,7 @@
 body {
   font-family: "Circular Spotify Tx T Bold";
   font-size: 14px;
+  background-image: linear-gradient(90deg, #af2896, #509bf5);
 }
 
 .vertical-nav {
@@ -146,6 +147,26 @@ header i {
   font-size: 30px;
   color: white;
   margin: 10px;
+}
+
+.albums h1 {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.albums div.col {
+  height: 6 rem;
+  padding: 3px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.card + h6 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: x-small;
 }
 
 footer {
