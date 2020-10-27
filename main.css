@@ -1,0 +1,159 @@
+body {
+  font-family: "Circular Spotify Tx T Bold";
+  font-size: 14px;
+}
+
+.vertical-nav {
+  min-width: 232px;
+  width: 232px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.nav-color {
+  background: #040404;
+}
+
+.nav-color a {
+  color: #b3b3b3 !important;
+}
+
+.nav-color a {
+  color: #b3b3b3 !important;
+}
+
+.navbar-brand img {
+  height: 3.09rem;
+}
+
+#active {
+  background: #282828;
+  color: #fff !important;
+}
+
+.icon {
+  margin-right: 13px;
+}
+
+/*playlist*/
+
+nav h1 {
+  color: #b3b3b3 !important;
+}
+.nav-header {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+}
+
+.sp-btn {
+  color: #fff;
+  opacity: 0.7;
+  background-color: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: -webkit-max-content;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+  width: 100%;
+  padding: 0;
+}
+
+.btn-svg {
+  background: #fff;
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  fill: #000;
+}
+
+.heart {
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.spoticon-heart-active-16::before {
+  font-size: 16px;
+}
+[class*=" spoticon-"]:before,
+[class^="spoticon-"]:before {
+  font-family: glue1-spoticon;
+  font-style: normal;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: inherit;
+  vertical-align: bottom;
+  display: inline-block;
+  text-decoration: inherit;
+}
+
+.Rootlist__divider {
+  background-color: #282828;
+  border: none;
+  height: 1px;
+}
+
+.overflow {
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  padding: 4px 0;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  margin-left: 272px;
+  background-color: #040404;
+}
+
+header {
+  margin-left: 232px;
+  background-color: #040404;
+}
+
+header i {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+}
+
+footer {
+  background-color: #282828;
+  padding: 30px;
+}
+
+footer i {
+  color: #b3b3b3;
+  margin: 10px;
+}
