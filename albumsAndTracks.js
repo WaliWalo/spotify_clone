@@ -12,7 +12,7 @@ class album {
 let albums = [];
 const addAlbum = function (album) {
   albums.push(album);
-  localStorage.setItem("playList", JSON.stringify(album));
+  localStorage.setItem(album.album, JSON.stringify(album));
 };
 
 class track {

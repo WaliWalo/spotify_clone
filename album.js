@@ -1,13 +1,13 @@
 const queryString = window.location.search;
 const queryAlbum = queryString.slice(1);
 console.log(queryAlbum);
-
-let clickedAlbum;
-for (let i = 0; i < albums.length; i++) {
-  if (albums[i].album === queryAlbum) {
-    clickedAlbum = albums[i];
-  }
-}
+console.log(JSON.parse(localStorage.getItem(queryAlbum)));
+let clickedAlbum = JSON.parse(localStorage.getItem(queryAlbum));
+// for (let i = 0; i < albums.length; i++) {
+//   if (albums[i].album === queryAlbum) {
+//     clickedAlbum = albums[i];
+//   }
+// }
 let albumTitle = document.querySelector("#albumTitle");
 albumTitle.innerText = clickedAlbum.album;
 let albumDesc = document.querySelector("#albumDesc");
