@@ -46,16 +46,7 @@
         aria-orientation="vertical"
       >
         <li class="nav-item px-2 d-flex flex-column justify-content-center">
-          <a
-            class="nav-link rounded align-middle active"
-            id="active"
-            id="v-pills-home-tab"
-            data-toggle="pill"
-            href="#v-pills-home"
-            role="tab"
-            aria-controls="v-pills-home"
-            aria-selected="true"
-          >
+          <a class="nav-link rounded align-middle" href="index.html">
             <div class="icon d-inline-block">
               <svg
                 viewBox="0 0 512 512"
@@ -117,39 +108,48 @@
             <span>Your Library</span>
           </a>
         </li>
+        <!---Playlists::::::::::::::::::::::::::::::::::::-->
+        <h1
+          class="px-4 font-weight-bold text-uppercase px-3 nav-header pt-4 mb-3 mb-0"
+        >
+          Playlists
+        </h1>
+
+        <li class="nav-item px-4">
+          <button
+            class="sp-btn"
+            class="nav-link"
+            id="v-pills-createPlaylist-tab"
+            data-toggle="pill"
+            href="#v-pills-createPlaylist"
+            role="tab"
+            aria-controls="v-pills-createPlaylist"
+            aria-selected="false"
+          >
+            <div class="icon d-inline-block bt">
+              <svg
+                class="btn-svg"
+                shape-rendering="crispEdges"
+                viewBox="0 0 36 36"
+              >
+                <path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path>
+              </svg>
+            </div>
+            <span>Create Playlist</span>
+          </button>
+        </li>
+        <div class="nav-item px-4">
+          <a href="#" class="nav-link px-0">
+            <div class="icon d-inline-block">
+              <div class="heart spoticon-heart-active-16">
+                <i class="fas fa-heart"></i>
+              </div>
+            </div>
+            <span>Liked Songs</span>
+          </a>
+        </div>
       </ul>
 
-      <!---Playlists::::::::::::::::::::::::::::::::::::-->
-      <h1
-        class="px-4 font-weight-bold text-uppercase px-3 nav-header pt-4 mb-3 mb-0"
-      >
-        Playlists
-      </h1>
-
-      <div class="nav-item px-4">
-        <button class="sp-btn">
-          <div class="icon d-inline-block bt">
-            <svg
-              class="btn-svg"
-              shape-rendering="crispEdges"
-              viewBox="0 0 36 36"
-            >
-              <path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path>
-            </svg>
-          </div>
-          <span>Create Playlist</span>
-        </button>
-      </div>
-      <div class="nav-item px-4">
-        <a href="#" class="nav-link px-0">
-          <div class="icon d-inline-block">
-            <div class="heart spoticon-heart-active-16">
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
-          <span>Liked Songs</span>
-        </a>
-      </div>
       <!---divider:::::::::::::::::::::::::::::::::::::::::::-->
       <div class="px-4">
         <hr class="Rootlist__divider mt-1 mb-2" />
@@ -194,11 +194,18 @@
           <div class="albumHead">
             <div class="container">
               <div class="row">
-                <img src="images/album/bohemian.jpg" alt="" class="mt-1" />
+                <img
+                  src="images/album/bohemian.jpg"
+                  alt=""
+                  class="mt-1"
+                  id="albumImg"
+                />
                 <div class="album">
                   <div>PLAYLIST</div>
-                  <div>Bohemian Rhapsody</div>
-                  <div>The soundtrack to being the best version of you.</div>
+                  <div id="albumTitle">Bohemian Rhapsody</div>
+                  <div id="albumDesc">
+                    The soundtrack to being the best version of you.
+                  </div>
                   <div>
                     <strong><a>Spotify</a></strong
                     >, 303,693 likes 50 songs, 2 hr 40 min
@@ -227,349 +234,9 @@
                 </tr>
               </thead>
 
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td>
-                    <div class="container d-flex justify-content-start p-0">
-                      <div>
-                        <img
-                          src="http://placehold.it/30x30"
-                          alt=""
-                          class="m-2"
-                        />
-                      </div>
-                      <div class="container">
-                        <div><strong>This is Title</strong></div>
-                        <div>artist</div>
-                      </div>
-                    </div>
-                  </td>
-                  <td>Album</td>
-                  <td>3 days ago</td>
-                  <td>3:33</td>
-                </tr>
-              </tbody>
+              <tbody></tbody>
             </table>
           </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="v-pills-about"
-          role="tabpanel"
-          aria-labelledby="v-pills-about-tab"
-        >
-          ABOUT US
-        </div>
-        <div
-          class="tab-pane fade"
-          id="v-pills-services"
-          role="tabpanel"
-          aria-labelledby="v-pills-services-tab"
-        >
-          SERVICE
-        </div>
-        <div
-          class="tab-pane fade"
-          id="v-pills-gallery"
-          role="tabpanel"
-          aria-labelledby="v-pills-gallery-tab"
-        >
-          ...
         </div>
       </main>
     </div>
@@ -630,6 +297,8 @@
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="albumsAndTracks.js"></script>
+    <script src="album.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

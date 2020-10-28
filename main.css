@@ -235,6 +235,10 @@ header i {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff1b6b", endColorstr="#45caff", GradientType=1 );
 }
 
+main {
+  padding-bottom: 98px;
+}
+
 main .container {
   margin-left: 55px;
 }
@@ -326,6 +330,12 @@ thead tr th {
   text-align: center;
   margin-top: 10px;
   font-size: x-small;
+}
+
+.formDiv {
+  padding-top: 50px;
+  padding-left: 280px;
+  padding-right: 280px;
 }
 
 footer {
