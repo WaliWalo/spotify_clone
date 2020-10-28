@@ -337,3 +337,64 @@ footer i {
   color: #b3b3b3;
   margin: 10px;
 }
+/***************video bar****************/
+footer .fa-random:hover {
+  color: #fff;
+}
+
+footer .fa-step-backward:hover {
+  color: #fff;
+}
+
+footer .fa-play:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+footer .fa-step-forward:hover {
+  color: #fff;
+}
+
+footer .fa-redo:hover {
+  color: #fff;
+}
+
+footer .fa-list:hover {
+  color: #fff;
+}
+
+footer .fa-desktop:hover {
+  color: #fff;
+}
+
+footer .fa-volume-up:hover {
+  color: #fff;
+}
+
+.bar-color {
+  background-color: grey;
+}
+
+.bar-color:hover {
+  background-color: #1db954;
+}
+
+.progress-bar__slider {
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  z-index: 100;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.middle-align {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}

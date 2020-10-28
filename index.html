@@ -9,6 +9,7 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
   <!-- font-awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <!-- Spotify font-->
@@ -26,6 +27,9 @@
         <img src="images\logo\Spotify-logo.png" alt="spotify logo" />
       </a>
     </div>
+
+
+
 
     <ul class="nav flex-column mb-0 nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
       <li class="nav-item px-2 d-flex flex-column justify-content-center">
@@ -243,9 +247,13 @@
               <h6 class="card-title">
                 <strong>I Love My '90s Hip-Hop</strong>
               </h6>
+
             </div>
+            <div class="text-light">3:35</div>
           </div>
         </div>
+
+
       </div>
       <div class="tab-pane fade" id="v-pills-library" role="tabpanel" aria-labelledby="v-pills-library-tab">
         LIBRARY
@@ -266,12 +274,13 @@
           <div class="container d-flex justify-content-center">
             <div class="text-light">1:20</div>
             <div class="progress m-2 bg-dark" style="height: 5px; width: 300px">
-              <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+              <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="25" aria-valuemin="0"
                 aria-valuemax="100"></div>
             </div>
             <div class="text-light">3:35</div>
           </div>
         </div>
+
         <div class="col-2">
           <div class="container d-flex">
             <i class="fas fa-list"></i>
@@ -279,8 +288,12 @@
             <i class="fas fa-volume-up"></i>
             <div class="mt-2">
               <div class="progress m-2 bg-dark" style="height: 5px; width: 100px">
-                <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                  aria-valuemax="100"></div>
+                <div class="progress-bar bar-color d-flex justify-content-right" role="progressbar" style="width: 25%"
+                  aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                  <button aria-label="Change volume" class="d-inline-block middle-align progress-bar__slider"></button>
+                </div>
+
+
               </div>
             </div>
           </div>
@@ -299,6 +312,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>
