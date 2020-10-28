@@ -9,110 +9,260 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+  <!-- font-awesome CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <!-- Spotify font-->
+  <link href="//db.onlinewebfonts.com/c/112ec584bfc481ccde03444e67f8fc3f?family=Circular+Spotify+Tx+T+Bold"
+    rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="main.css" />
 
-  <title>Hello, world!</title>
+  <title>Album Page</title>
 </head>
 
 <body>
-  <nav class="vertical-nav navbar-dark nav-color" id="sidebar">
-    <div class="pt-3 px-3 mb-4">
-      <a class="navbar-brand mb-1" href="#">
+  <nav class="vertical-nav text-white nav-color" id="sidebar">
+    <div class="pt-3 px-3 mb-3">
+      <a class="navbar-brand" href="index.html">
         <img src="images\logo\Spotify-logo.png" alt="spotify logo" />
       </a>
     </div>
 
-    <ul class="nav flex-column mb-0">
-      <li class="nav-item">
-        <a href="#" class="nav-link font-italic">
-          <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-          Home
+
+   
+
+    <ul class="nav flex-column mb-0 nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+      <li class="nav-item px-2 d-flex flex-column justify-content-center">
+        <a class="nav-link rounded align-middle active" id="active" id="v-pills-home-tab" data-toggle="pill"
+          href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+          <div class="icon d-inline-block">
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <span>Home</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link font-italic">
-          <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
-          About
+      <li class="nav-item px-2">
+        <a href="#" class="nav-link text-white">
+          <div class="icon d-inline-block">
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                fill="currentColor" fill-rule="evenodd"></path>
+            </svg>
+          </div>
+          <span>Search</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link font-italic">
-          <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-          Services
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link font-italic">
-          <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-          Gallery
+      <li class="nav-item px-2">
+        <a class="nav-link" id="v-pills-library-tab" data-toggle="pill" href="#v-pills-library" role="tab"
+          aria-controls="v-pills-library" aria-selected="false">
+          <div class="icon d-inline-block">
+            <svg viewBox="0 0 512 512" width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                fill="currentColor"></path>
+            </svg>
+          </div>
+          <span>Your Library</span>
         </a>
       </li>
     </ul>
 
-    <h1 class="text-muted font-weight-bold text-uppercase px-3 small py-4 mb-0">
-      Charts
+    <!---Playlists::::::::::::::::::::::::::::::::::::-->
+    <h1 class="px-4 font-weight-bold text-uppercase px-3 nav-header pt-4 mb-3 mb-0">
+      Playlists
     </h1>
 
-    <ul class="nav flex-column mb-0">
-      <li class="nav-item">
-        <a href="#" class="nav-link font-italic">
-          <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
-          Area charts
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link font-italic">
-          <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
-          Bar charts
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link font-italic">
-          <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
-          Pie charts
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link font-italic">
-          <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
-          Line charts
-        </a>
-      </li>
-    </ul>
+    <div class="nav-item px-4">
+      <button class="sp-btn">
+        <div class="icon d-inline-block bt">
+          <svg class="btn-svg" shape-rendering="crispEdges" viewBox="0 0 36 36">
+            <path d="m28 20h-8v8h-4v-8h-8v-4h8v-8h4v8h8v4z"></path>
+          </svg>
+        </div>
+        <span>Create Playlist</span>
+      </button>
+    </div>
+    <div class="nav-item px-4">
+      <a href="#" class="nav-link px-0">
+        <div class="icon d-inline-block">
+          <div class="heart spoticon-heart-active-16">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+        <span>Liked Songs</span>
+      </a>
+    </div>
+    <!---divider:::::::::::::::::::::::::::::::::::::::::::-->
+    <div class="px-4">
+      <hr class="Rootlist__divider mt-1 mb-2" />
+    </div>
   </nav>
-  <header class="fixed-top">
-    <div class="container d-flex">
+  <div class="head">
+    <header class="sticky-top">
       <div class="container d-flex">
-        <i class="fas fa-arrow-left"></i> <i class="fas fa-arrow-right"></i>
-      </div>
-      <div class="container d-flex justify-content-end m-2">
-        <button class="btn btn-dark mr-2">Upgrade Now</button>
-        <div class="dropdown">
-          <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Hung Jin
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Account</a>
-            <a class="dropdown-item" href="#">Profile</a>
-            <hr />
-            <a class="dropdown-item" href="#">Logout</a>
+
+        <div class="container d-flex mt-3">
+          <i class="arrow fas fa-arrow-left"></i> <i class="arrow fas fa-arrow-right"></i>
+        </div>
+
+        <div class="container d-flex justify-content-end m-2 ">
+          <button class="btn text-white mr-2 rounded-pill py-0 border border-white upgrade">Upgrade Now</button>
+
+
+          <div class="dropdown">
+            <button class="rounded-pill pl-1 btn btn-dark dropdown-toggle pb-0" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+              <div class="rounded-circle d-inline-block mr-2 mt-1" id="user-image"></div>
+              <div class="d-inline-block">
+                <span>Hung Jin</span>
+              </div>
+            </button>
+
+            <div class="dropdown-menu bg-dark nav-color" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="login.html">Login</a>
+              <a class="dropdown-item" href="#">Profile</a>
+              <div class="drop-divider"></div>
+
+              <a class="dropdown-item" href="#">Logout</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
+    <main class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+        <!-- albums -->
+        <div class="albums px-5">
+          <!--first-row-->
+          <div class="row row-cols-6 row-cols-md-6 row-cols-lg-6 row-cols-xl-6">
+            <div class="col">
+              <h1>#THROWBACKTHURSDAY</h1>
+            </div>
+          </div>
+
+          <div class="row row-cols-6 row-cols-md-6 row-cols-lg-6 row-cols-xl-6">
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <a href="album.html"><img src="smile.jpg" class="card-img-top" alt="..." /></a>
+              </div>
+              <h6 class="card-title"><strong>Italian karaoke</strong></h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+
+              <h6 class="card-title"><strong>Lyricists</strong></h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+              <h6 class="card-title">
+                <strong>Italy's Frequent Rotation</strong>
+              </h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+              <h6 class="card-title"><strong>00s Italy</strong></h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+              <h6 class="card-title"><strong>Cocktail Hour</strong></h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+              <h6 class="card-title">
+                <strong>I Love My '90s Hip-Hop</strong>
+              </h6>
+            </div>
+
+
+            <span>Liked Songs</span>
+            </a>
+          </div>
+          <!---divider:::::::::::::::::::::::::::::::::::::::::::-->
+          <div class="px-4">
+            <hr class="Rootlist__divider mt-1 mb-2">
+          </div>
+
+          <!--second row-->
+
+
+          <div class="row row-cols-6 row-cols-md-6 row-cols-lg-6 row-cols-xl-6">
+            <div class="col">
+              <h1>#THROWBACKTHURSDAY</h1>
+            </div>
+          </div>
+
+          <div class="row row-cols-6 row-cols-md-6 row-cols-lg-6 row-cols-xl-6">
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <a href="album.html"><img src="smile.jpg" class="card-img-top" alt="..." /></a>
+              </div>
+              <h6 class="card-title"><strong>Italian karaoke</strong></h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+
+              <h6 class="card-title"><strong>Lyricists</strong></h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+              <h6 class="card-title">
+                <strong>Italy's Frequent Rotation</strong>
+              </h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+              <h6 class="card-title"><strong>00s Italy</strong></h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+              <h6 class="card-title"><strong>Cocktail Hour</strong></h6>
+            </div>
+            <div class="col">
+              <div class="card mx-auto" style="width: 15 rem">
+                <img src="smile.jpg" class="card-img-top" alt="..." />
+              </div>
+              <h6 class="card-title">
+                <strong>I Love My '90s Hip-Hop</strong>
+              </h6>
+
+            </div>
+            <div class="text-light">3:35</div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="tab-pane fade" id="v-pills-library" role="tabpanel" aria-labelledby="v-pills-library-tab">
+        LIBRARY
+      </div>
+    </main>
+  </div>
+
   <footer class="fixed-bottom">
     <div class="container">
-
-
-
-
-
-
-
-
       <div class="row">
         <div class="col-10">
           <div class="container d-flex justify-content-center">
@@ -122,7 +272,6 @@
             </div>
           </div>
           <div class="container d-flex justify-content-center">
-
             <div class="text-light">1:20</div>
             <div class="progress m-2 bg-dark" style="height: 5px; width: 300px">
               <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
@@ -131,6 +280,7 @@
             <div class="text-light">3:35</div>
           </div>
         </div>
+
         <div class="col-2">
           <div class="container d-flex">
             <i class="fas fa-list"></i>

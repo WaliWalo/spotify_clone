@@ -1,7 +1,6 @@
 body {
   font-family: "Circular Spotify Tx T Bold";
   font-size: 14px;
-  background-image: linear-gradient(90deg, #af2896, #509bf5);
 }
 
 .vertical-nav {
@@ -31,11 +30,6 @@ body {
   color: #b3b3b3 !important;
 }
 
-.drop-divider {
-  height: 0;
-  border-top: 0.2px solid #b3b3b3;
-}
-
 .navbar-brand img {
   height: 3.09rem;
 }
@@ -61,10 +55,6 @@ nav h1 {
   letter-spacing: 0.1em;
 }
 
-.nav-link:hover {
-  color: #fff !important;
-}
-
 .sp-btn {
   color: #fff;
   opacity: 0.7;
@@ -84,10 +74,6 @@ nav h1 {
   transition: opacity 0.2s linear;
   width: 100%;
   padding: 0;
-}
-
-.sp-btn:hover {
-  opacity: 1;
 }
 
 .btn-svg {
@@ -163,27 +149,6 @@ header i {
   color: white;
   margin: 10px;
   z-index: 99999;
-}
-
-#user-image {
-  background-image: url("https://cdn.discordapp.com/avatars/265101186212954113/2db0d4407aa1aad036a03226c7ab8753.png?size=256");
-  width: 28px;
-  height: 28px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.arrow {
-  font-size: 1em;
-}
-
-.arrow:hover {
-  cursor: pointer;
-}
-
-.upgrade:hover {
-  transform: scale(1.05);
 }
 
 .head {
@@ -264,51 +229,6 @@ thead tr th {
   background-color: rgba(0, 0, 0, 1);
 }
 
-/* Albums */
-.albums {
-  background-image: linear-gradient(90deg, #af2896, #509bf5);
-}
-
-.albums h1 {
-  color: white;
-  margin-top: 50px;
-  margin-bottom: 5px;
-  display: inline-block;
-}
-
-.albums div.col {
-  height: 6 rem;
-  padding: 3px;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-.card + h6 {
-  text-align: center;
-  margin-top: 10px;
-  font-size: x-small;
-}
-
-.albums h1 {
-  color: white;
-  margin-top: 50px;
-  margin-bottom: 5px;
-  display: inline-block;
-}
-
-.albums div.col {
-  height: 6 rem;
-  padding: 3px;
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-
-.card + h6 {
-  text-align: center;
-  margin-top: 10px;
-  font-size: x-small;
-}
-
 footer {
   background-color: #282828;
   padding: 30px;
@@ -317,37 +237,4 @@ footer {
 footer i {
   color: #b3b3b3;
   margin: 10px;
-}
-/***************video bar****************/
-footer .fa-random:hover {
-  color: #fff;
-}
-
-footer .fa-step-backward:hover {
-  color: #fff;
-}
-
-footer .fa-play:hover {
-  color: #fff;
-  transform: scale(1.2);
-}
-
-footer .fa-step-forward:hover {
-  color: #fff;
-}
-
-footer .fa-redo:hover {
-  color: #fff;
-}
-
-footer .fa-list:hover {
-  color: #fff;
-}
-
-footer .fa-desktop:hover {
-  color: #fff;
-}
-
-footer .fa-volume-up:hover {
-  color: #fff;
 }
