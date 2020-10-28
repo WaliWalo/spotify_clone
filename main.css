@@ -31,6 +31,11 @@ body {
   color: #b3b3b3 !important;
 }
 
+.drop-divider {
+  height: 0;
+  border-top: 0.2px solid #b3b3b3;
+}
+
 .navbar-brand img {
   height: 3.09rem;
 }
@@ -150,6 +155,27 @@ header i {
   color: white;
   margin: 10px;
   z-index: 99999;
+}
+
+#user-image {
+  background-image: url("https://cdn.discordapp.com/avatars/265101186212954113/2db0d4407aa1aad036a03226c7ab8753.png?size=256");
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.arrow {
+  font-size: 1em;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.upgrade:hover {
+  transform: scale(1.05);
 }
 
 .head {
