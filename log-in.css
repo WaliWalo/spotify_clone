@@ -68,9 +68,9 @@ nav .log-logo {
   border-image: initial;
 }
 
-.btg a {
+/*.btg a {
   color: #616467 !important;
-}
+}*/
 
 .btg:hover {
   background-color: #616467 !important;
@@ -81,7 +81,7 @@ nav .log-logo {
   text-decoration: none;
 }
 
-.btg a:hover {
+.btg:hover .btg a {
   color: #fff !important;
   text-decoration: none;
 }
