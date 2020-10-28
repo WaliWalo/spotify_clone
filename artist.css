@@ -299,7 +299,7 @@ thead tr th {
 
 #jumbotron {
   color: white;
-  background: url("queen.jpg");
+  background: url("images/photo/TPH.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -308,8 +308,8 @@ thead tr th {
 
 #jumbotron > .container {
   min-height: 30vh;
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   position: relative;
 }
 
