@@ -56,6 +56,10 @@ nav h1 {
   letter-spacing: 0.1em;
 }
 
+.nav-link:hover {
+  color: #fff !important;
+}
+
 .sp-btn {
   color: #fff;
   opacity: 0.7;
@@ -75,6 +79,10 @@ nav h1 {
   transition: opacity 0.2s linear;
   width: 100%;
   padding: 0;
+}
+
+.sp-btn:hover {
+  opacity: 1;
 }
 
 .btn-svg {
