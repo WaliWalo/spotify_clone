@@ -37,3 +37,36 @@ footer i {
   color: #b3b3b3;
   margin: 10px;
 }
+/***************video bar****************/
+footer .fa-random:hover {
+  color: #fff;
+}
+
+footer .fa-step-backward:hover {
+  color: #fff;
+}
+
+footer .fa-play:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+footer .fa-step-forward:hover {
+  color: #fff;
+}
+
+footer .fa-redo:hover {
+  color: #fff;
+}
+
+footer .fa-list:hover {
+  color: #fff;
+}
+
+footer .fa-desktop:hover {
+  color: #fff;
+}
+
+footer .fa-volume-up:hover {
+  color: #fff;
+}
