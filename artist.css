@@ -577,8 +577,8 @@ footer .fa-volume-up:hover {
 }
 .middle-align {
   position: absolute;
-  top: 35%;
-  right: 10%;
+
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  transform: translateX(25px);
 }
