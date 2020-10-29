@@ -55,6 +55,34 @@ const populateAlbums = function () {
 };
 window.onload = function () {
   populateAlbums();
+  populateLibrary();
+};
+
+const populateLibrary = function () {
+  let albumDiv = document.querySelector("#v-pills-library>div");
+
+  //ALBUM ROW
+  let albumRow = document.createElement("div");
+  albumRow.classList.add(
+    "row",
+    "row-cols-6",
+    "row-cols-md-6",
+    "row-cols-lg-6",
+    "row-cols-xl-6"
+  );
+  albumDiv.appendChild(albumRow);
+  for (let i = 0; i < playlists.length; i++) {
+    let albumCol = document.createElement("div");
+    albumCol.classList.add("col");
+    albumCol.innerHTML = `<div class="card mx-auto" style="width: 15 rem">
+                                <a href="album.html?${playlists[i].album}"
+                                  ><img src="${playlists[i].imageUrl}" class="card-img-top" alt="..."
+                                /></a>
+                              </div>
+                              <h6 class="card-title"><strong>${playlists[i].album}</strong></h6>
+                            </div>`;
+    albumRow.appendChild(albumCol);
+  }
 };
 
 const addPlayList = function () {
@@ -76,7 +104,7 @@ const addPlayList = function () {
     url,
     rating
   );
-  addAlbum(newAlbum);
+  addPlayList(newAlbum);
 
-  populateAlbums();
+  populateLibrary();
 };

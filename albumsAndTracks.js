@@ -29,6 +29,12 @@ const addTrack = function (track) {
   tracks.push(track);
 };
 
+let playlists = [];
+const addPlaylist = function (album) {
+  playlists.push(album);
+  localStorage.setItem("playlists", JSON.stringify(playlists));
+};
+
 let taylorSwift = new album(
   "Taylor Swift",
   "Folklore",
