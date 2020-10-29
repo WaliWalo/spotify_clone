@@ -3,9 +3,10 @@ const queryAlbum = queryString.slice(1);
 console.log(JSON.parse(localStorage.getItem("tracks")));
 tracks = JSON.parse(localStorage.getItem("tracks"));
 albums = JSON.parse(localStorage.getItem("albums"));
-let clickedAlbum = queryAlbum;
+
+let clickedAlbum = decodeURI(queryAlbum);
 for (let i = 0; i < albums.length; i++) {
-  if (albums[i].album === queryAlbum) {
+  if (albums[i].album === clickedAlbum) {
     clickedAlbum = albums[i];
   }
 }

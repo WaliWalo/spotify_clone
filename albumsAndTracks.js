@@ -33,7 +33,7 @@ if (JSON.parse(localStorage.getItem("tracks")) !== null) {
 const addTrack = function (track) {
   if (
     JSON.parse(localStorage.getItem("tracks")) === null ||
-    JSON.parse(localStorage.getItem("tracks")).length < 38
+    JSON.parse(localStorage.getItem("tracks")).length < 87
   ) {
     localStorage.setItem("tracks", JSON.stringify(tracks));
     tracks.push(track);
@@ -172,8 +172,6 @@ addTrack(blackPink6);
 addTrack(blackPink7);
 addTrack(blackPink8);
 
-
-
 let tphFirst = new album(
   "Tom Petty & The Heartbreakers",
   "Tom Petty & The Heartbreakers",
@@ -184,18 +182,49 @@ let tphFirst = new album(
   "4"
 );
 
-
 addAlbum(tphFirst);
-let tphFirst1 = new track("Rockin'Around (With You)", "2:29", "Tom Petty & The Heartbreakers");
+let tphFirst1 = new track(
+  "Rockin'Around (With You)",
+  "2:29",
+  "Tom Petty & The Heartbreakers"
+);
 let tphFirst2 = new track("Breakdown", "2:43", "Tom Petty & The Heartbreakers");
-let tphFirst3 = new track("Hometown Blues", "2:14", "Tom Petty & The Heartbreakers");
-let tphFirst4 = new track("The Wild One, Forever", "3:03", "Tom Petty & The Heartbreakers");
-let tphFirst5 = new track("Anything That's Rock 'n' Roll", "2:24", "Tom Petty & The Heartbreakers");
-let tphFirst6 = new track("Strangered in the Night", "3:54", "Tom Petty & The Heartbreakers");
-let tphFirst7 = new track("Fooled Again (I Don't Like It)", "3:50", "Tom Petty & The Heartbreakers");
-let tphFirst8 = new track("Mystery Man", "3:03", "Tom Petty & The Heartbreakers");
+let tphFirst3 = new track(
+  "Hometown Blues",
+  "2:14",
+  "Tom Petty & The Heartbreakers"
+);
+let tphFirst4 = new track(
+  "The Wild One, Forever",
+  "3:03",
+  "Tom Petty & The Heartbreakers"
+);
+let tphFirst5 = new track(
+  "Anything That's Rock 'n' Roll",
+  "2:24",
+  "Tom Petty & The Heartbreakers"
+);
+let tphFirst6 = new track(
+  "Strangered in the Night",
+  "3:54",
+  "Tom Petty & The Heartbreakers"
+);
+let tphFirst7 = new track(
+  "Fooled Again (I Don't Like It)",
+  "3:50",
+  "Tom Petty & The Heartbreakers"
+);
+let tphFirst8 = new track(
+  "Mystery Man",
+  "3:03",
+  "Tom Petty & The Heartbreakers"
+);
 let tphFirst9 = new track("Luna", "3:58", "Tom Petty & The Heartbreakers");
-let tphFirst10 = new track("American Girl", "3:34", "Tom Petty & The Heartbreakers");
+let tphFirst10 = new track(
+  "American Girl",
+  "3:34",
+  "Tom Petty & The Heartbreakers"
+);
 
 addTrack(tphFirst1);
 addTrack(tphFirst2);
@@ -208,9 +237,6 @@ addTrack(tphFirst8);
 addTrack(tphFirst9);
 addTrack(tphFirst10);
 
-
-
-
 let tphSecond = new album(
   "Tom Petty & The Heartbreakers",
   "You're Gonna Get It!",
@@ -221,18 +247,41 @@ let tphSecond = new album(
   "3"
 );
 
-
 addAlbum(tphSecond);
-let tphSecond1 = new track(	"When the Time Comes", "2:47", "You're Gonna Get It!");
-let tphSecond2 = new track(	"You're Gonna Get It"	 , "3:01", "You're Gonna Get It!");
+let tphSecond1 = new track(
+  "When the Time Comes",
+  "2:47",
+  "You're Gonna Get It!"
+);
+let tphSecond2 = new track(
+  "You're Gonna Get It",
+  "3:01",
+  "You're Gonna Get It!"
+);
 let tphSecond3 = new track("Hurt", "3:16", "You're Gonna Get It!");
 let tphSecond4 = new track("Magnolia", "3:03", "You're Gonna Get It!");
-let tphSecond5 = new track("Too Much Ain't Enough", "2:56", "You're Gonna Get It!");
-let tphSecond6 = new track(	"I Need to Know", "2:24", "You're Gonna Get It!");
-let tphSecond7 = new track("Listen to Her Heart"	 , "3:04", "You're Gonna Get It!");
-let tphSecond8 = new track("No Second Thoughts"	 , "2:41", "You're Gonna Get It!");
+let tphSecond5 = new track(
+  "Too Much Ain't Enough",
+  "2:56",
+  "You're Gonna Get It!"
+);
+let tphSecond6 = new track("I Need to Know", "2:24", "You're Gonna Get It!");
+let tphSecond7 = new track(
+  "Listen to Her Heart",
+  "3:04",
+  "You're Gonna Get It!"
+);
+let tphSecond8 = new track(
+  "No Second Thoughts",
+  "2:41",
+  "You're Gonna Get It!"
+);
 let tphSecond9 = new track("Restless", "3.24", "You're Gonna Get It!");
-let tphSecond10 = new track("Baby's a Rock'n'Roller", "2:53", "You're Gonna Get It!");
+let tphSecond10 = new track(
+  "Baby's a Rock'n'Roller",
+  "2:53",
+  "You're Gonna Get It!"
+);
 
 addTrack(tphSecond1);
 addTrack(tphSecond2);
@@ -245,8 +294,6 @@ addTrack(tphSecond8);
 addTrack(tphSecond9);
 addTrack(tphSecond10);
 
-
-
 let tphThird = new album(
   "Tom Petty & The Heartbreakers",
   "Damn The Torpedoes",
@@ -258,16 +305,27 @@ let tphThird = new album(
 );
 
 addAlbum(tphThird);
-let tphThird1 = new track(	"Refugee", "3:22", "Damn The Torpedoes");
-let tphThird2 = new track(	"Here Comes My Girl"	 , "4:27", "Damn The Torpedoes");
+let tphThird1 = new track("Refugee", "3:22", "Damn The Torpedoes");
+let tphThird2 = new track("Here Comes My Girl", "4:27", "Damn The Torpedoes");
 let tphThird3 = new track("Even The Losers", "3:59", "Damn The Torpedoes");
-let tphThird4 = new track("Shadow of a Doubt (A Complex Kid)"	 , "4:25", "Damn The Torpedoes");
+let tphThird4 = new track(
+  "Shadow of a Doubt (A Complex Kid)",
+  "4:25",
+  "Damn The Torpedoes"
+);
 let tphThird5 = new track("Century City", "3:45", "Damn The Torpedoes");
-let tphThird6 = new track(	"Don't Do Me Like That", "2:44", "Damn The Torpedoes");
-let tphThird7 = new track("You Tell Me"	 , "4:35", "Damn The Torpedoes");
-let tphThird8 = new track("What Are You Doin' in My Life"	 , "3:27", "Damn The Torpedoes");
+let tphThird6 = new track(
+  "Don't Do Me Like That",
+  "2:44",
+  "Damn The Torpedoes"
+);
+let tphThird7 = new track("You Tell Me", "4:35", "Damn The Torpedoes");
+let tphThird8 = new track(
+  "What Are You Doin' in My Life",
+  "3:27",
+  "Damn The Torpedoes"
+);
 let tphThird9 = new track("Louisiana Rain", "5:54", "Damn The Torpedoes");
-
 
 addTrack(tphThird1);
 addTrack(tphThird2);
@@ -279,28 +337,35 @@ addTrack(tphThird7);
 addTrack(tphThird8);
 addTrack(tphThird9);
 
-
-
 let tphFourth = new album(
   "Tom Petty & The Heartbreakers",
   "Hard Promises",
-  "Hard Promises is the fourth studio album by Tom Petty and the Heartbreakers released on May 5, 1981 on Backstreet Records.",  "19 October 1979",
+  "Hard Promises is the fourth studio album by Tom Petty and the Heartbreakers released on May 5, 1981 on Backstreet Records.",
+  "19 October 1979",
   "Rock and roll",
   "images/album/tph4.jpg",
   "4"
 );
 
 addAlbum(tphFourth);
-let tphFourth1 = new track(	"The Waiting", "3:58", "Hard Promises");
-let tphFourth2 = new track(		"A Woman in Love (It's Not Me)"	 , "4:22", "Hard Promises");
+let tphFourth1 = new track("The Waiting", "3:58", "Hard Promises");
+let tphFourth2 = new track(
+  "A Woman in Love (It's Not Me)",
+  "4:22",
+  "Hard Promises"
+);
 let tphFourth3 = new track("Nightwatchman", "3:59", "Hard Promises");
-let tphFourth4 = new track("Something Big"	 , "4:44", "Hard Promises");
+let tphFourth4 = new track("Something Big", "4:44", "Hard Promises");
 let tphFourth5 = new track("Kings Road", "3:27", "Hard Promises");
-let tphFourth6 = new track(	"Letting You Go", "3:24", "Hard Promises");
-let tphFourth7 = new track("A Thing About You"	 , "3:33", "Hard Promises");
-let tphFourth8 = new track("Insider"	 , "4:23", "Hard Promises");
+let tphFourth6 = new track("Letting You Go", "3:24", "Hard Promises");
+let tphFourth7 = new track("A Thing About You", "3:33", "Hard Promises");
+let tphFourth8 = new track("Insider", "4:23", "Hard Promises");
 let tphFourth9 = new track("The Criminal Kind", "4:00", "Hard Promises");
-let tphFourth9 = new track("You Can Still Change Your Mind", "4:15", "Hard Promises");
+let tphFourth10 = new track(
+  "You Can Still Change Your Mind",
+  "4:15",
+  "Hard Promises"
+);
 
 addTrack(tphFourth1);
 addTrack(tphFourth2);
@@ -313,9 +378,6 @@ addTrack(tphFourth8);
 addTrack(tphFourth9);
 addTrack(tphFourth10);
 
-
-
-
 let tphFifth = new album(
   "Tom Petty & The Heartbreakers",
   "Long After Dark",
@@ -326,15 +388,15 @@ let tphFifth = new album(
 
 addAlbum(tphFifth);
 let tphFifth1 = new track("A One Story Town", "3:06", "Long After Dark");
-let tphFifth2 = new track("You Got Lucky"	 , "3:37", "Long After Dark");
+let tphFifth2 = new track("You Got Lucky", "3:37", "Long After Dark");
 let tphFifth3 = new track("Deliver Me", "3:28", "Long After Dark");
-let tphFifth4 = new track("Change of Heart"	 , "3:18", "Long After Dark");
+let tphFifth4 = new track("Change of Heart", "3:18", "Long After Dark");
 let tphFifth5 = new track("Finding Out", "3:36", "Long After Dark");
 let tphFifth6 = new track("We Stand a Chance", "3:38", "Long After Dark");
-let tphFifth7 = new track("Straight into Darkness"	 , "3:49", "Long After Dark");
+let tphFifth7 = new track("Straight into Darkness", "3:49", "Long After Dark");
 let tphFifth8 = new track("The Same Old You", "3:31", "Long After Dark");
 let tphFifth9 = new track("Between Two Worlds", "5:12", "Long After Dark");
-let tphFifth9 = new track("A Wasted Life", "4:35", "Long After Dark");
+let tphFifth10 = new track("A Wasted Life", "4:35", "Long After Dark");
 
 addTrack(tphFifth1);
 addTrack(tphFifth2);
@@ -346,6 +408,3 @@ addTrack(tphFifth7);
 addTrack(tphFifth8);
 addTrack(tphFifth9);
 addTrack(tphFifth10);
-
-
-
