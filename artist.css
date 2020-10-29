@@ -388,7 +388,47 @@ thead tr th {
 }
 
 .card {
-  background-color: black;
+  background-color: #181818;
+  transition: background-color 0.3s ease;
+}
+
+.card:hover {
+  background: #282828;
+}
+
+.play-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #1db954;
+  transform: translateY(-2.5em);
+  right: 27px;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .play-btn {
+  transform: translateY(-3.5em);
+  opacity: 1;
+}
+
+.play-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 3px;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent #fff;
+  margin: auto;
+}
+
+.card img {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .card + h6 {
