@@ -280,6 +280,10 @@ thead tr th {
   flex-shrink: 1;
 }
 
+.card {
+  background-color: black;
+}
+
 .card + h6 {
   text-align: center;
   margin-top: 10px;
@@ -331,7 +335,14 @@ thead tr th {
 
 #first-container .card,
 #most-popular-albums .card {
-  text-align: center;
+  text-align: left;
+  /*   display: inline-block;
+  width: 200px;
+  position: relative;
+  top: 0.5rem;
+  text-overflow: ellipsis; /*truncates the text over 80px overflow with three ...*/
+  /* white-space: nowrap;
+  overflow: hidden; */
 }
 
 footer {
