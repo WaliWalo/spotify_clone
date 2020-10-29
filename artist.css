@@ -31,6 +31,11 @@ body {
   color: #b3b3b3 !important;
 }
 
+.drop-divider {
+  height: 0;
+  border-top: 0.2px solid #b3b3b3;
+}
+
 .navbar-brand img {
   height: 3.09rem;
 }
@@ -56,6 +61,10 @@ nav h1 {
   letter-spacing: 0.1em;
 }
 
+.nav-link:hover {
+  color: #fff !important;
+}
+
 .sp-btn {
   color: #fff;
   opacity: 0.7;
@@ -75,6 +84,10 @@ nav h1 {
   transition: opacity 0.2s linear;
   width: 100%;
   padding: 0;
+}
+
+.sp-btn:hover {
+  opacity: 1;
 }
 
 .btn-svg {
@@ -150,6 +163,46 @@ header i {
   color: white;
   margin: 10px;
   z-index: 99999;
+}
+
+#user-image {
+  background-image: url("https://cdn.discordapp.com/avatars/265101186212954113/2db0d4407aa1aad036a03226c7ab8753.png?size=256");
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upgrade + .dropdown .dropdown-toggle:after {
+  position: relative;
+  bottom: 8px;
+}
+
+.upgrade.btn:focus,
+.user-btn.btn:focus {
+  box-shadow: none;
+}
+
+.user-btn.btn:hover {
+  background-color: #282828 !important;
+}
+
+.user-name {
+  position: relative;
+  bottom: 10px;
+}
+
+.arrow {
+  font-size: 1em;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.upgrade:hover {
+  transform: scale(1.05);
 }
 
 .head {
