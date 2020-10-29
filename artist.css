@@ -292,12 +292,28 @@ header i {
 /*this below was added*/
 
 main {
-  background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(87, 10, 29, 1) 64%
-  );
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  100% {
+    background: rgba(87, 10, 29, 1);
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  100% {
+    background: rgba(87, 10, 29, 1);
+  }
 }
 
 main .container {
