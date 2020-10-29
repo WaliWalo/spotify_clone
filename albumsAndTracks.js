@@ -23,13 +23,31 @@ class track {
   }
 }
 
-let tracks = [];
+let tracks;
+if (JSON.parse(localStorage.getItem("tracks")) !== null) {
+  tracks = JSON.parse(localStorage.getItem("tracks"));
+} else {
+  tracks = [];
+}
 
 const addTrack = function (track) {
-  tracks.push(track);
+  if (
+    JSON.parse(localStorage.getItem("tracks")) === null ||
+    JSON.parse(localStorage.getItem("tracks")).length < 38
+  ) {
+    localStorage.setItem("tracks", JSON.stringify(tracks));
+    tracks.push(track);
+  } else {
+    tracks.push(track);
+  }
 };
 
-let playlists = JSON.parse(localStorage.getItem("playlists"));
+let playlists;
+if (JSON.parse(localStorage.getItem("playlists")) !== null) {
+  playlists = JSON.parse(localStorage.getItem("playlists"));
+} else {
+  playlists = [];
+}
 
 const addPlaylist = function (album) {
   playlists.push(album);

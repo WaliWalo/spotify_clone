@@ -16,6 +16,7 @@ if (clickedAlbum.album === undefined) {
     }
   }
 }
+console.log(clickedAlbum);
 let albumTitle = document.querySelector("#albumTitle");
 albumTitle.innerText = clickedAlbum.album;
 let albumDesc = document.querySelector("#albumDesc");
