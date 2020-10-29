@@ -31,6 +31,11 @@ body {
   color: #b3b3b3 !important;
 }
 
+.drop-divider {
+  height: 0;
+  border-top: 0.2px solid #b3b3b3;
+}
+
 .navbar-brand img {
   height: 3.09rem;
 }
@@ -56,6 +61,10 @@ nav h1 {
   letter-spacing: 0.1em;
 }
 
+.nav-link:hover {
+  color: #fff !important;
+}
+
 .sp-btn {
   color: #fff;
   opacity: 0.7;
@@ -75,6 +84,10 @@ nav h1 {
   transition: opacity 0.2s linear;
   width: 100%;
   padding: 0;
+}
+
+.sp-btn:hover {
+  opacity: 1;
 }
 
 .btn-svg {
@@ -152,6 +165,100 @@ header i {
   z-index: 99999;
 }
 
+#user-image {
+  background-image: url("https://cdn.discordapp.com/avatars/265101186212954113/2db0d4407aa1aad036a03226c7ab8753.png?size=256");
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upgrade + .dropdown .dropdown-toggle:after {
+  position: relative;
+  bottom: 8px;
+}
+
+.upgrade.btn:focus,
+.user-btn.btn:focus {
+  box-shadow: none;
+}
+
+.user-btn.btn:hover {
+  background-color: #282828 !important;
+}
+
+.user-name {
+  position: relative;
+  bottom: 10px;
+}
+
+.arrow {
+  font-size: 1em;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.upgrade:hover {
+  transform: scale(1.05);
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 1);
+  margin-bottom: 0px;
+}
+
+header i {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+  z-index: 99999;
+}
+
+#user-image {
+  background-image: url("https://cdn.discordapp.com/avatars/265101186212954113/2db0d4407aa1aad036a03226c7ab8753.png?size=256");
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upgrade + .dropdown .dropdown-toggle:after {
+  position: relative;
+  bottom: 8px;
+}
+
+.upgrade.btn:focus,
+.user-btn.btn:focus {
+  box-shadow: none;
+}
+
+.user-btn.btn:hover {
+  background-color: #282828 !important;
+}
+
+.user-name {
+  position: relative;
+  bottom: 10px;
+}
+
+.arrow {
+  font-size: 1em;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.upgrade:hover {
+  transform: scale(1.05);
+}
+
 .head {
   position: absolute;
   left: 230px;
@@ -185,12 +292,28 @@ header i {
 /*this below was added*/
 
 main {
-  background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(87, 10, 29, 1) 64%
-  );
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  100% {
+    background: rgba(87, 10, 29, 1);
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  100% {
+    background: rgba(87, 10, 29, 1);
+  }
 }
 
 main .container {
@@ -281,7 +404,51 @@ thead tr th {
 }
 
 .card {
-  background-color: black;
+  background-color: #181818;
+  transform: scale(1);
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  background: #282828;
+  transform: scale(1.05);
+}
+
+.play-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #1db954;
+  transform: translateY(-2.5em);
+  right: 27px;
+  opacity: 0;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .play-btn {
+  transform: translateY(-3.5em);
+  opacity: 1;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.play-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 3px;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent #fff;
+  margin: auto;
+}
+
+.card img {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
 .card + h6 {
@@ -353,4 +520,65 @@ footer {
 footer i {
   color: #b3b3b3;
   margin: 10px;
+}
+/***************video bar****************/
+footer .fa-random:hover {
+  color: #fff;
+}
+
+footer .fa-step-backward:hover {
+  color: #fff;
+}
+
+footer .fa-play:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+footer .fa-step-forward:hover {
+  color: #fff;
+}
+
+footer .fa-redo:hover {
+  color: #fff;
+}
+
+footer .fa-list:hover {
+  color: #fff;
+}
+
+footer .fa-desktop:hover {
+  color: #fff;
+}
+
+footer .fa-volume-up:hover {
+  color: #fff;
+}
+
+.bar-color {
+  background-color: grey;
+}
+
+.bar-color:hover {
+  background-color: #1db954;
+}
+
+.progress-bar__slider {
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  z-index: 100;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.middle-align {
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
