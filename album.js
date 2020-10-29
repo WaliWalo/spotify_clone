@@ -1,13 +1,22 @@
 const queryString = window.location.search;
 const queryAlbum = queryString.slice(1);
 console.log(queryAlbum);
-console.log(JSON.parse(localStorage.getItem(queryAlbum)));
-let clickedAlbum = JSON.parse(localStorage.getItem(queryAlbum));
-// for (let i = 0; i < albums.length; i++) {
-//   if (albums[i].album === queryAlbum) {
-//     clickedAlbum = albums[i];
-//   }
-// }
+console.log(JSON.parse(localStorage.getItem("tracks")));
+tracks = JSON.parse(localStorage.getItem("tracks"));
+albums = JSON.parse(localStorage.getItem("albums"));
+let clickedAlbum = queryAlbum;
+for (let i = 0; i < albums.length; i++) {
+  if (albums[i].album === queryAlbum) {
+    clickedAlbum = albums[i];
+  }
+}
+if (clickedAlbum.album === undefined) {
+  for (let i = 0; i < playlists.length; i++) {
+    if (playlists[i].album === clickedAlbum) {
+      clickedAlbum = playlists[i];
+    }
+  }
+}
 let albumTitle = document.querySelector("#albumTitle");
 albumTitle.innerText = clickedAlbum.album;
 let albumDesc = document.querySelector("#albumDesc");
@@ -37,3 +46,14 @@ for (let i = 0; i < albumTrack.length; i++) {
                     <td>${albumTrack[i].duration}</td>`;
   tbody.appendChild(tr);
 }
+let lastTr = document.createElement("tr");
+lastTr.innerHTML = document.createElement("tr");
+lastTr.innerHTML = `<th scope="row"></th>
+                  <td>
+                     
+                  </td>
+                  <td></td>
+                  <td></td>
+                  <td><button class="btn btn-dark">Add Track</button></td>`;
+
+tbody.appendChild(tr);
