@@ -1,6 +1,5 @@
 const queryString = window.location.search;
 const queryAlbum = queryString.slice(1);
-console.log(queryAlbum);
 console.log(JSON.parse(localStorage.getItem("tracks")));
 tracks = JSON.parse(localStorage.getItem("tracks"));
 albums = JSON.parse(localStorage.getItem("albums"));
@@ -38,12 +37,15 @@ for (let i = 0; i < albumTrack.length; i++) {
                     <td>
                         <div class="container">
                         <div><strong>${albumTrack[i].title}</strong></div>
-                        <div>${clickedAlbum.artist}</div>
+                        <div><a href="artist.html">${
+                          clickedAlbum.artist
+                        }</a></div>
                         </div>
                     </td>
                     <td>${albumTrack[i].album}</td>
                     <td>3 days ago</td>
-                    <td>${albumTrack[i].duration}</td>`;
+                    <td>${albumTrack[i].duration}</td>
+                    <td><a type="button" onclick="removeTrack(this)">Remove</a></td>`;
   tbody.appendChild(tr);
 }
 let lastTr = document.createElement("tr");
@@ -80,7 +82,7 @@ lastTr.innerHTML = `<th scope="row"></th>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary" onclick='addNewTrack()'>Save changes</button>
+                          <button type="button" class="btn btn-primary" onclick='addNewTrack()' data-dismiss="modal">Save changes</button>
                         </div>
                       </div>
                     </div>
@@ -104,12 +106,21 @@ const addNewTrack = function () {
                           </td>
                           <td>${clickedAlbum.album}</td>
                           <td>3 days ago</td>
-                          <td>${durationInput.value}</td>`;
+                          <td>${durationInput.value}</td>
+                          <td><a type="button" onclick="removeTrack(this)">Remove</a></td>`;
   if (lastRow === null) {
     lastRow = document.querySelector("tbody");
-    lastRow.appendChild(newListTr);
+    lastRow.classList.add("animate");
+    lastRow.classList.add("fadeIn");
+    setTimeout(function () {
+      lastRow.appendChild(newListTr);
+    }, 2500);
   } else {
-    lastRow.insertAdjacentElement("afterend", newListTr);
+    lastRow.classList.add("animate");
+    lastRow.classList.add("fadeIn");
+    setTimeout(function () {
+      lastRow.insertAdjacentElement("afterend", newListTr);
+    }, 2500);
   }
 
   tracks.push(
@@ -118,4 +129,21 @@ const addNewTrack = function () {
   localStorage.setItem("tracks", JSON.stringify(tracks));
 
   console.log(lastRow);
+};
+
+const removeTrack = function (e) {
+  let row = e.parentElement.parentElement;
+  row.classList.add("animate");
+  row.classList.add("fadeOut");
+  let selectedTrack = row.querySelector("strong");
+  let tracks = JSON.parse(localStorage.getItem("tracks"));
+  for (let i = 0; i < tracks.length; i++) {
+    if (tracks[i].title === selectedTrack.innerText) {
+      tracks.splice(i, 1);
+    }
+  }
+  localStorage.setItem("tracks", JSON.stringify(tracks));
+  setTimeout(function () {
+    row.remove();
+  }, 2500);
 };
