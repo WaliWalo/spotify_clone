@@ -280,6 +280,10 @@ thead tr th {
   flex-shrink: 1;
 }
 
+.card {
+  background-color: black;
+}
+
 .card + h6 {
   text-align: center;
   margin-top: 10px;
@@ -299,7 +303,7 @@ thead tr th {
 
 #jumbotron {
   color: white;
-  background: url("queen.jpg");
+  background: url("images/photo/TPH.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -308,8 +312,8 @@ thead tr th {
 
 #jumbotron > .container {
   min-height: 30vh;
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   position: relative;
 }
 
@@ -331,7 +335,14 @@ thead tr th {
 
 #first-container .card,
 #most-popular-albums .card {
-  text-align: center;
+  text-align: left;
+  /*   display: inline-block;
+  width: 200px;
+  position: relative;
+  top: 0.5rem;
+  text-overflow: ellipsis; /*truncates the text over 80px overflow with three ...*/
+  /* white-space: nowrap;
+  overflow: hidden; */
 }
 
 footer {
