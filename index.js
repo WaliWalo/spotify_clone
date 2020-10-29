@@ -42,10 +42,6 @@ const populateAlbums = function () {
     albumRow.appendChild(albumCol);
   }
 };
-window.onload = function () {
-  populateAlbums();
-  populateLibrary();
-};
 
 const populateLibrary = function () {
   let albumDiv = document.querySelector("#v-pills-library>div");
@@ -95,5 +91,10 @@ const addPlayList = function () {
   );
   addPlaylist(newAlbum);
 
+  populateLibrary();
+};
+
+window.onload = function () {
+  populateAlbums();
   populateLibrary();
 };

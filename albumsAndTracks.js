@@ -23,13 +23,13 @@ class track {
   }
 }
 
-let tracks = [];
+let tracks = JSON.parse(localStorage.getItem("tracks"));
 
 const addTrack = function (track) {
   tracks.push(track);
 };
 
-let playlists = [];
+let playlists = JSON.parse(localStorage.getItem("playlists"));
 const addPlaylist = function (album) {
   playlists.push(album);
   localStorage.setItem("playlists", JSON.stringify(playlists));
