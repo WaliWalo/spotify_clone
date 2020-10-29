@@ -28,27 +28,16 @@ const populateAlbums = function () {
     "row-cols-xl-6"
   );
   albumDiv.appendChild(albumRow);
-  for (let i = 0; i < localStorage.length; i++) {
+  albumsLocal = JSON.parse(localStorage.getItem("albums"));
+  for (let i = 0; i < albumsLocal.length; i++) {
     let albumCol = document.createElement("div");
     albumCol.classList.add("col");
     albumCol.innerHTML = `<div class="card mx-auto" style="width: 15 rem">
-                              <a href="album.html?${
-                                JSON.parse(
-                                  localStorage.getItem(localStorage.key(i))
-                                ).album
-                              }"
-                                ><img src="${
-                                  JSON.parse(
-                                    localStorage.getItem(localStorage.key(i))
-                                  ).imageUrl
-                                }" class="card-img-top" alt="..."
+                              <a href="album.html?${albumsLocal[i].album}"
+                                ><img src="${albumsLocal[i].imageUrl}" class="card-img-top" alt="..."
                               /></a>
                             </div>
-                            <h6 class="card-title"><strong>${
-                              JSON.parse(
-                                localStorage.getItem(localStorage.key(i))
-                              ).album
-                            }</strong></h6>
+                            <h6 class="card-title"><strong>${albumsLocal[i].album}</strong></h6>
                           </div>`;
     albumRow.appendChild(albumCol);
   }
@@ -104,7 +93,7 @@ const addPlayList = function () {
     url,
     rating
   );
-  addPlayList(newAlbum);
+  addPlaylist(newAlbum);
 
   populateLibrary();
 };
