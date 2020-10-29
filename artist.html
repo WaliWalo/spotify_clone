@@ -348,6 +348,35 @@
           $('#sidebar, #content').toggleClass('active');
         });
       });
+
+
+
+
+
+
+      window.onload = function () {
+        let arrow = document.querySelectorAll('i.arrow');
+        let upgrade = document.querySelector('.upgrade');
+        let hamburger = document.querySelector('.hamburger');
+        let nav = document.querySelector('nav.active');
+
+        hamburger.addEventListener('click', function () {
+
+          //upgrade.classList.add('hide');
+          if (nav == nav) {
+            upgrade.classList.toggle('hide');
+
+            for (i = 0; i < arrow.length; i++) {
+              return arrow[i].classList.toggle('hide');
+
+            }
+
+
+          }
+
+        })
+      }
+
     </script>
 </body>
 
