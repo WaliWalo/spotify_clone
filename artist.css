@@ -389,11 +389,13 @@ thead tr th {
 
 .card {
   background-color: #181818;
-  transition: background-color 0.3s ease;
+  transform: scale(1);
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
 }
 
 .card:hover {
   background: #282828;
+  transform: scale(1.05);
 }
 
 .play-btn {
@@ -404,12 +406,14 @@ thead tr th {
   transform: translateY(-2.5em);
   right: 27px;
   opacity: 0;
+
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover .play-btn {
   transform: translateY(-3.5em);
   opacity: 1;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
 }
 
 .play-btn::before {
