@@ -205,6 +205,60 @@ header i {
   transform: scale(1.05);
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 1);
+  margin-bottom: 0px;
+}
+
+header i {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+  z-index: 99999;
+}
+
+#user-image {
+  background-image: url("https://cdn.discordapp.com/avatars/265101186212954113/2db0d4407aa1aad036a03226c7ab8753.png?size=256");
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upgrade + .dropdown .dropdown-toggle:after {
+  position: relative;
+  bottom: 8px;
+}
+
+.upgrade.btn:focus,
+.user-btn.btn:focus {
+  box-shadow: none;
+}
+
+.user-btn.btn:hover {
+  background-color: #282828 !important;
+}
+
+.user-name {
+  position: relative;
+  bottom: 10px;
+}
+
+.arrow {
+  font-size: 1em;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.upgrade:hover {
+  transform: scale(1.05);
+}
+
 .head {
   position: absolute;
   left: 230px;
