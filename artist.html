@@ -115,9 +115,10 @@
 
 
       <div class="container d-flex">
-        <div class="container d-flex mt-3">
+        <div class="container arrows d-flex mt-3">
           <i class="arrow fas fa-arrow-left"></i>
           <i class="arrow fas fa-arrow-right"></i>
+
         </div>
 
         <div class="container d-flex justify-content-end m-2">
@@ -408,6 +409,35 @@
           $('#sidebar, #content').toggleClass('active');
         });
       });
+
+
+
+
+
+
+      window.onload = function () {
+        let arrow = document.querySelectorAll('i.arrow');
+        console.log(arrow)
+        let upgrade = document.querySelector('.upgrade');
+        let hamburger = document.querySelector('.hamburger');
+        let nav = document.querySelector('nav.active');
+
+        hamburger.addEventListener('click', function () {
+
+          //upgrade.classList.add('hide');
+          if (nav == nav) {
+            upgrade.classList.toggle('hide');
+
+            for (i = 0; i < arrow.length; i++) {
+              return arrow[i].classList.toggle('hide');
+
+            }
+
+          }
+
+        })
+      }
+
     </script>
 </body>
 
