@@ -213,7 +213,7 @@ header i {
 
 .head {
   position: absolute;
-  left: 230px;
+  left: 0;
   right: 0;
 }
 
@@ -416,12 +416,13 @@ footer .fa-volume-up:hover {
 }
 
 /********burger menu***********/
+
 .hamburger {
   margin: 0 20px;
   margin-top: 26px;
   width: 24px;
   height: 14px;
-  position: relative;
+  position: absolute;
   cursor: pointer;
 }
 
