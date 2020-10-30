@@ -718,9 +718,9 @@ footer .fa-volume-up:hover {
     font-size: 70%;
   }
 
-  #first-container p,
-  #most-popular-albums p,
-  #featured-on p {
+  #first-container span,
+  #most-popular-albums span,
+  #featured-on span {
     font-size: 10px;
   }
 
@@ -746,9 +746,9 @@ footer .fa-volume-up:hover {
     font-size: 70%;
   }
 
-  #first-container p,
-  #most-popular-albums p,
-  #featured-on p {
+  #first-container span,
+  #most-popular-albums span,
+  #featured-on span {
     font-size: 10px;
   }
   h2 {
@@ -773,9 +773,9 @@ footer .fa-volume-up:hover {
     font-size: 70%;
   }
 
-  #first-container p,
-  #most-popular-albums p,
-  #featured-on p {
+  #first-container span,
+  #most-popular-albums span,
+  #featured-on span {
     font-size: 12px;
   }
 
@@ -801,9 +801,9 @@ footer .fa-volume-up:hover {
     font-size: 100%;
   }
 
-  #first-container p,
-  #most-popular-albums p,
-  #featured-on p {
+  #first-container span,
+  #most-popular-albums span,
+  #featured-on span {
     font-size: 14px;
   }
 
