@@ -496,26 +496,21 @@ thead tr th {
   left: 0;
 }
 
-.text-container > h1 {
+/* .text-container > h1 {
   font-size: 10vh;
   font-weight: bolder;
-}
+} */
 
 #first-container,
-#most-popular-albums {
+#most-popular-albums,
+#featured-on {
   color: white;
 }
 
 #first-container .card,
-#most-popular-albums .card {
-  text-align: left;
-  /*   display: inline-block;
-  width: 200px;
-  position: relative;
-  top: 0.5rem;
-  text-overflow: ellipsis; /*truncates the text over 80px overflow with three ...*/
-  /* white-space: nowrap;
-  overflow: hidden; */
+#most-popular-albums .card,
+#featured-on .card {
+  text-align: center;
 }
 
 footer {
@@ -707,5 +702,115 @@ footer .fa-volume-up:hover {
   #content.active {
     margin-left: 17rem;
     width: calc(100% - 17rem);
+  }
+}
+
+@media (min-width: 68px) {
+  #jumbotron h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  #jumbotron h6 {
+    font-size: 12px;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  table {
+    font-size: 70%;
+  }
+
+  #first-container p,
+  #most-popular-albums p,
+  #featured-on p {
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Small devices (tablets, 768px and up) / */
+@media (min-width: 768px) {
+  #jumbotron h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  #jumbotron h6 {
+    font-size: 12px;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  table {
+    font-size: 70%;
+  }
+
+  #first-container p,
+  #most-popular-albums p,
+  #featured-on p {
+    font-size: 10px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* / Medium devices (desktops, 992px and up) / */
+@media (min-width: 992px) {
+  #jumbotron h1 {
+    font-size: 60px;
+    font-weight: bolder;
+  }
+
+  #jumbotron h6 {
+    font-size: 15px;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  table {
+    font-size: 70%;
+  }
+
+  #first-container p,
+  #most-popular-albums p,
+  #featured-on p {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+/* / Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #jumbotron h1 {
+    font-size: 80px;
+    font-weight: bolder;
+  }
+
+  #jumbotron h6 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  table {
+    font-size: 100%;
+  }
+
+  #first-container p,
+  #most-popular-albums p,
+  #featured-on p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 35px;
   }
 }
