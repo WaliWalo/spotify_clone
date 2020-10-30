@@ -45,13 +45,9 @@ body {
   height: 3.09rem;
 }
 
-#active {
-  color: #fff !important;
-}
-
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
+  color: #fff !important;
   background-color: #363b41;
 }
 
