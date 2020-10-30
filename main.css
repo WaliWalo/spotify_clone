@@ -468,6 +468,11 @@ footer .fa-volume-up:hover {
   background-color: #1db954;
 }
 
+.progress {
+  height: 5px !important;
+  transform: translateY(2px);
+}
+
 .progress-bar {
   background-color: #1db954;
 }
