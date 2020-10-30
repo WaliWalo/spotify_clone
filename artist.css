@@ -709,6 +709,10 @@ footer .fa-volume-up:hover {
     width: calc(100% - 14.5rem);
   }
 
+  .arrows {
+    margin-left: 32px;
+  }
+
   .hide {
     display: none;
   }
