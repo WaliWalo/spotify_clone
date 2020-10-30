@@ -2,7 +2,7 @@ const populateAlbums = function () {
   let albumDiv = document.querySelector("#v-pills-home>div");
 
   // ROW TITLE
-  let rowTitle = document.createTextNode("#THROWBACKTHURSDAY");
+  let rowTitle = document.createTextNode("#TGIFRIDAY");
   let rowTitleDiv = document.createElement("div");
   rowTitleDiv.classList.add(
     "row",
