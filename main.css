@@ -417,6 +417,10 @@ footer i {
   color: #b3b3b3;
   margin: 10px;
 }
+
+footer .fas {
+  cursor: pointer;
+}
 /***************video bar****************/
 footer .fa-random:hover {
   color: #fff;
@@ -585,6 +589,10 @@ footer .fa-volume-up:hover {
   margin: 0;
 }
 
+/*************MEDIA QUERY******************/
+@media (max-width: 400) {
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -611,6 +619,23 @@ footer .fa-volume-up:hover {
 
   .hide {
     display: none;
+  }
+
+  /*************footer*************/
+
+  .mask {
+    position: absolute;
+    height: 5px;
+    width: 100px;
+    background-color: #282828;
+    z-index: 9999;
+    transition: 0.3s;
+  }
+
+  .fas:hover + .mt-2 .mask {
+    -webkit-transform: translateX(-100px);
+    transform: translateX(-100px);
+    display: block;
   }
 }
 
