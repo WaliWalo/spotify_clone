@@ -18,6 +18,12 @@ body {
   text-transform: none;
 }
 
+.page-content {
+  width: calc(100% - 14.5rem);
+  margin-left: 14.5rem;
+  transition: all 0.4s;
+}
+
 .nav-color {
   background: #040404;
 }
@@ -28,6 +34,11 @@ body {
 
 .nav-color a {
   color: #b3b3b3 !important;
+}
+
+.drop-divider {
+  height: 0;
+  border-top: 0.2px solid #b3b3b3;
 }
 
 .navbar-brand img {
@@ -55,6 +66,10 @@ nav h1 {
   letter-spacing: 0.1em;
 }
 
+.nav-link:hover {
+  color: #fff !important;
+}
+
 .sp-btn {
   color: #fff;
   opacity: 0.7;
@@ -74,6 +89,10 @@ nav h1 {
   transition: opacity 0.2s linear;
   width: 100%;
   padding: 0;
+}
+
+.sp-btn:hover {
+  opacity: 1;
 }
 
 .btn-svg {
@@ -151,9 +170,49 @@ header i {
   z-index: 99999;
 }
 
+#user-image {
+  background-image: url("https://cdn.discordapp.com/avatars/265101186212954113/2db0d4407aa1aad036a03226c7ab8753.png?size=256");
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upgrade + .dropdown .dropdown-toggle:after {
+  position: relative;
+  bottom: 8px;
+}
+
+.upgrade.btn:focus,
+.user-btn.btn:focus {
+  box-shadow: none;
+}
+
+.user-btn.btn:hover {
+  background-color: #282828 !important;
+}
+
+.user-name {
+  position: relative;
+  bottom: 10px;
+}
+
+.arrow {
+  font-size: 1em;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.upgrade:hover {
+  transform: scale(1.05);
+}
+
 .head {
   position: absolute;
-  left: 230px;
+  left: 0;
   right: 0;
 }
 
@@ -232,6 +291,7 @@ thead tr th {
   top: 54px;
   background-color: rgba(0, 0, 0, 1);
 }
+
 .animate {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -285,6 +345,7 @@ thead tr th {
   animation-name: fadeOut;
 }
 
+/************footer****************/
 footer {
   background-color: #282828;
   padding: 30px;
@@ -293,4 +354,201 @@ footer {
 footer i {
   color: #b3b3b3;
   margin: 10px;
+}
+
+/***************video bar****************/
+footer .fa-random:hover {
+  color: #fff;
+}
+
+footer .fa-step-backward:hover {
+  color: #fff;
+}
+
+footer .fa-play:hover {
+  color: #fff;
+  transform: scale(1.2);
+}
+
+footer .fa-step-forward:hover {
+  color: #fff;
+}
+
+footer .fa-redo:hover {
+  color: #fff;
+}
+
+footer .fa-list:hover {
+  color: #fff;
+}
+
+footer .fa-desktop:hover {
+  color: #fff;
+}
+
+footer .fa-volume-up:hover {
+  color: #fff;
+}
+
+.bar-color {
+  background-color: grey;
+}
+
+.bar-color:hover {
+  background-color: #1db954;
+}
+
+.progress-bar__slider {
+  background-color: #fff;
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin-left: -6px;
+  z-index: 100;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  opacity: 0;
+}
+.middle-align {
+  position: absolute;
+
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  transform: translateX(25px);
+}
+
+/********burger menu***********/
+
+.hamburger {
+  margin: 0 20px;
+  margin-top: 26px;
+  width: 24px;
+  height: 14px;
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
+.hamburger .bar {
+  padding: 0;
+  width: 24px;
+  height: 1px;
+  background-color: white;
+  display: block;
+  border-radius: 4px;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+}
+
+.bar1 {
+  top: 0;
+}
+
+.bar2,
+.bar3 {
+  top: 6.5px;
+}
+
+.bar3 {
+  right: 0;
+}
+
+.bar4 {
+  bottom: 0;
+}
+
+.hamburger2 .bar2,
+.hamburger3 .bar3,
+.hamburger4 .bar4 {
+  top: 6.5px;
+}
+
+.hamburger4 .bar5 {
+  bottom: 0px;
+}
+
+.hamburger4 .bar {
+  transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+
+.hamburger4 .bar2 {
+  width: 0px;
+  transform: rotate(90deg);
+  left: 12.5px;
+}
+
+.hamburger4 .bar3 {
+  width: 1px;
+  left: 13.5px;
+}
+
+.checkbox4 {
+  display: none;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar1 {
+  top: 13.5px;
+  background-color: transparent !important;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar2 {
+  left: 0px;
+  width: 24px;
+  transform: rotate(45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar3 {
+  left: 0;
+  width: 24px;
+  transform: rotate(-45deg);
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar4 {
+  background-color: transparent !important;
+}
+
+.checkbox4:checked + label > .hamburger4 > .bar5 {
+  bottom: 13.5px;
+  background-color: transparent !important;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -14.5rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  #sidebar {
+    margin-left: -14.5rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 14.5rem;
+    width: calc(100% - 14.5rem);
+  }
+
+  .arrows {
+    margin-left: 32px;
+  }
+
+  .hide {
+    display: none;
+  }
 }

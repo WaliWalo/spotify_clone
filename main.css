@@ -407,6 +407,7 @@ thead tr th {
   padding-right: 50px;
 }
 
+/************footer****************/
 footer {
   background-color: #282828;
   padding: 30px;
@@ -468,14 +469,14 @@ footer .fa-volume-up:hover {
   z-index: 100;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  opacity: 1;
+  opacity: 0;
 }
 .middle-align {
   position: absolute;
-  top: 35%;
-  right: 10%;
+
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  transform: translateX(25px);
 }
 
 /********burger menu***********/
@@ -487,6 +488,7 @@ footer .fa-volume-up:hover {
   height: 14px;
   position: absolute;
   cursor: pointer;
+  display: none;
 }
 
 .hamburger .bar {
@@ -584,6 +586,10 @@ footer .fa-volume-up:hover {
 }
 
 @media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
   #sidebar {
     margin-left: -14.5rem;
   }
