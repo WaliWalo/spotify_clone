@@ -129,7 +129,7 @@ const addNewTrack = function () {
     new track(titleInput.value, durationInput.value, clickedAlbum.album)
   );
   localStorage.setItem("tracks", JSON.stringify(tracks));
-
+  location.reload();
   console.log(lastRow);
 };
 

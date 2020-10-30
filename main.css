@@ -1,7 +1,6 @@
 body {
   font-family: "Circular Spotify Tx T Bold";
   font-size: 14px;
-  background-image: linear-gradient(90deg, #af2896, #509bf5);
 }
 
 .vertical-nav {
@@ -254,6 +253,26 @@ main .container .row img:first-of-type {
   height: 230px;
 }
 
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: rgba(255, 27, 107, 1);
+  }
+
+  100% {
+    background: rgba(69, 202, 255, 1);
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: rgba(255, 27, 107, 1);
+  }
+
+  100% {
+    background: rgba(69, 202, 255, 1);
+  }
+}
+
 .album {
   margin: 10px;
 }
@@ -295,7 +314,9 @@ thead tr th {
 
 /* Albums */
 .albums {
-  background-image: linear-gradient(90deg, #af2896, #509bf5);
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+  min-height: 100vh;
 }
 
 .albums h1 {
@@ -312,10 +333,58 @@ thead tr th {
   flex-shrink: 1;
 }
 
+.card {
+  background-color: #181818;
+  transform: scale(1);
+  transition: background-color 0.3s ease, transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  background: #282828;
+  transform: scale(1.05);
+}
+
+.play-btn {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #1db954;
+  transform: translateY(-2.5em);
+  right: 27px;
+  opacity: 0;
+
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover .play-btn {
+  transform: translateY(-3.5em);
+  opacity: 1;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.5);
+}
+
+.play-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 3px;
+  border-style: solid;
+  border-width: 7px 0 7px 10px;
+  border-color: transparent transparent transparent #fff;
+  margin: auto;
+}
+
+.card img {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
 .card + h6 {
   text-align: center;
   margin-top: 10px;
-  font-size: x-small;
+  font-size: medium;
 }
 
 .albums h1 {
@@ -330,12 +399,6 @@ thead tr th {
   padding: 3px;
   flex-grow: 1;
   flex-shrink: 1;
-}
-
-.card + h6 {
-  text-align: center;
-  margin-top: 10px;
-  font-size: x-small;
 }
 
 .formDiv {
