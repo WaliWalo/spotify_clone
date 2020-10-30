@@ -511,7 +511,7 @@ footer .fa-volume-up:hover {
 /* for toggle behavior */
 
 #sidebar.active {
-  margin-left: -17rem;
+  margin-left: -14.5rem;
 }
 
 #content.active {
@@ -521,7 +521,7 @@ footer .fa-volume-up:hover {
 
 @media (max-width: 768px) {
   #sidebar {
-    margin-left: -17rem;
+    margin-left: -14.5rem;
   }
   #sidebar.active {
     margin-left: 0;
@@ -531,7 +531,15 @@ footer .fa-volume-up:hover {
     margin: 0;
   }
   #content.active {
-    margin-left: 17rem;
-    width: calc(100% - 17rem);
+    margin-left: 14.5rem;
+    width: calc(100% - 14.5rem);
+  }
+
+  .arrows {
+    margin-left: 32px;
+  }
+
+  .hide {
+    display: none;
   }
 }
