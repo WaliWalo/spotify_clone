@@ -463,6 +463,10 @@ footer .fa-volume-up:hover {
   background-color: #1db954;
 }
 
+.progress-bar {
+  background-color: #1db954;
+}
+
 .progress-bar__slider {
   background-color: #fff;
   border: 0;
