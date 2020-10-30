@@ -360,10 +360,6 @@ table {
   background-color: black;
 }
 
-table tr th:first-of-type {
-  padding-left: 5rem;
-}
-
 thead tr th {
   position: sticky;
   top: 54px;
