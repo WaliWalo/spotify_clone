@@ -382,7 +382,9 @@ let tphFifth = new album(
   "Tom Petty & The Heartbreakers",
   "Long After Dark",
   "Long After Dark is the fifth studio album by American rock band Tom Petty and the Heartbreakers, released November 2, 1982 on Backstreet Records. Notable for the MTV hit You Got Lucky, the album was also the band's first to feature Howie Epstein on bass and harmony vocals. Epstein's vocals are prevalent throughout the album and from that point on, became an integral part of the Heartbreakers' sound.",
-  "images/album/tph5.jpg",
+  "19 October 1979",
+  "Rock and roll",
+  "images/album/TPH5.jpg",
   "3"
 );
 
