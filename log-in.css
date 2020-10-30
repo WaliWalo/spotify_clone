@@ -59,21 +59,18 @@ nav .log-logo {
   text-decoration: none;
 }
 
-.btg a {
-  color: none;
-}
-
 .btg {
   background-color: rgb(255, 255, 255) !important;
+
   border-width: 3px;
   border-style: solid;
   border-color: #616467;
   border-image: initial;
 }
 
-.btg {
+/*.btg a {
   color: #616467 !important;
-}
+}*/
 
 .btg:hover {
   background-color: #616467 !important;
@@ -84,7 +81,7 @@ nav .log-logo {
   text-decoration: none;
 }
 
-.btg:hover {
+.btg:hover .btg a {
   color: #fff !important;
   text-decoration: none;
 }

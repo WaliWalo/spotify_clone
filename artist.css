@@ -1,6 +1,7 @@
 body {
   font-family: "Circular Spotify Tx T Bold";
   font-size: 14px;
+  background-image: linear-gradient(90deg, #af2896, #509bf5);
 }
 
 .vertical-nav {
@@ -210,6 +211,60 @@ header i {
   transform: scale(1.05);
 }
 
+header {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 1);
+  margin-bottom: 0px;
+}
+
+header i {
+  font-size: 30px;
+  color: white;
+  margin: 10px;
+  z-index: 99999;
+}
+
+#user-image {
+  background-image: url("https://cdn.discordapp.com/avatars/265101186212954113/2db0d4407aa1aad036a03226c7ab8753.png?size=256");
+  width: 28px;
+  height: 28px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.upgrade + .dropdown .dropdown-toggle:after {
+  position: relative;
+  bottom: 8px;
+}
+
+.upgrade.btn:focus,
+.user-btn.btn:focus {
+  box-shadow: none;
+}
+
+.user-btn.btn:hover {
+  background-color: #282828 !important;
+}
+
+.user-name {
+  position: relative;
+  bottom: 10px;
+}
+
+.arrow {
+  font-size: 1em;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}
+
+.upgrade:hover {
+  transform: scale(1.05);
+}
+
 .head {
   position: absolute;
   left: 0;
@@ -240,8 +295,31 @@ header i {
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff1b6b", endColorstr="#45caff", GradientType=1 );
 }
 
+/*this below was added*/
+
 main {
-  padding-bottom: 98px;
+  -webkit-animation: color-change-2x 2s linear infinite alternate both;
+  animation: color-change-2x 2s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  100% {
+    background: rgba(87, 10, 29, 1);
+  }
+}
+
+@keyframes color-change-2x {
+  0% {
+    background: rgba(0, 0, 0, 1);
+  }
+
+  100% {
+    background: rgba(87, 10, 29, 1);
+  }
 }
 
 main .container {
@@ -251,26 +329,6 @@ main .container {
 main .container .row img:first-of-type {
   width: 230px;
   height: 230px;
-}
-
-@-webkit-keyframes color-change-2x {
-  0% {
-    background: rgba(255, 27, 107, 1);
-  }
-
-  100% {
-    background: rgba(69, 202, 255, 1);
-  }
-}
-
-@keyframes color-change-2x {
-  0% {
-    background: rgba(255, 27, 107, 1);
-  }
-
-  100% {
-    background: rgba(69, 202, 255, 1);
-  }
 }
 
 .album {
@@ -302,10 +360,6 @@ table {
   background-color: black;
 }
 
-table tr th:first-of-type {
-  padding-left: 5rem;
-}
-
 thead tr th {
   position: sticky;
   top: 54px;
@@ -314,9 +368,27 @@ thead tr th {
 
 /* Albums */
 .albums {
-  -webkit-animation: color-change-2x 2s linear infinite alternate both;
-  animation: color-change-2x 2s linear infinite alternate both;
-  min-height: 100vh;
+  background-image: linear-gradient(90deg, #af2896, #509bf5);
+}
+
+.albums h1 {
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.albums div.col {
+  height: 6 rem;
+  padding: 3px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.card + h6 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: x-small;
 }
 
 .albums h1 {
@@ -342,6 +414,12 @@ thead tr th {
 .card:hover {
   background: #282828;
   transform: scale(1.05);
+}
+
+/*test play */
+
+th > i:hover {
+  transform: scale(1.3);
 }
 
 .play-btn {
@@ -384,30 +462,41 @@ thead tr th {
 .card + h6 {
   text-align: center;
   margin-top: 10px;
-  font-size: medium;
+  font-size: x-small;
 }
 
-.albums h1 {
+#jumbotron {
   color: white;
-  margin-top: 50px;
-  margin-bottom: 5px;
-  display: inline-block;
+  background: url("images/photo/TPH.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-.albums div.col {
-  height: 6 rem;
-  padding: 3px;
-  flex-grow: 1;
-  flex-shrink: 1;
+#jumbotron > .container {
+  min-height: 30vh;
+  position: relative;
 }
 
-.formDiv {
-  padding-top: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+#jumbotron > .container > .text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-/************footer****************/
+#first-container,
+#most-popular-albums,
+#featured-on {
+  color: white;
+}
+
+#first-container .card,
+#most-popular-albums .card,
+#featured-on .card {
+  text-align: center;
+}
+
 footer {
   background-color: #282828;
   padding: 30px;
@@ -416,10 +505,6 @@ footer {
 footer i {
   color: #b3b3b3;
   margin: 10px;
-}
-
-footer .fas {
-  cursor: pointer;
 }
 /***************video bar****************/
 footer .fa-random:hover {
@@ -456,7 +541,7 @@ footer .fa-volume-up:hover {
 }
 
 .bar-color {
-  background-color: blue;
+  background-color: grey;
 }
 
 .bar-color:hover {
@@ -484,7 +569,6 @@ footer .fa-volume-up:hover {
 }
 
 /********burger menu***********/
-
 .hamburger {
   margin: 0 20px;
   margin-top: 26px;
@@ -589,10 +673,6 @@ footer .fa-volume-up:hover {
   margin: 0;
 }
 
-/*************MEDIA QUERY******************/
-@media (max-width: 400) {
-}
-
 @media (max-width: 768px) {
   .hamburger {
     display: block;
@@ -620,38 +700,55 @@ footer .fa-volume-up:hover {
   .hide {
     display: none;
   }
-
-  /*************footer*************/
-
-  .mask {
-    position: absolute;
-    height: 5px;
-    width: 100px;
-    background-color: #282828;
-    z-index: 9999;
-    transition: 0.3s;
-  }
-
-  .fas:hover + .mt-2 .mask {
-    -webkit-transform: translateX(-100px);
-    transform: translateX(-100px);
-    display: block;
-  }
 }
 
 @media (min-width: 68px) {
-  .card h6 {
+  #jumbotron h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  #jumbotron h6 {
+    font-size: 12px;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  table {
+    font-size: 70%;
+  }
+
+  #first-container span,
+  #most-popular-albums span,
+  #featured-on span {
     font-size: 10px;
   }
 
-  h1 {
-    font-size: 30px;
+  h2 {
+    font-size: 20px;
   }
 }
 
-/* Small devices (tablets, 768px and up) / /
+/* Small devices (tablets, 768px and up) / */
 @media (min-width: 768px) {
-  .card h6 {
+  #jumbotron h1 {
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  #jumbotron h6 {
+    font-size: 12px;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  table {
+    font-size: 70%;
+  }
+
+  #first-container span,
+  #most-popular-albums span,
+  #featured-on span {
     font-size: 10px;
   }
   h2 {
@@ -659,9 +756,26 @@ footer .fa-volume-up:hover {
   }
 }
 
-/ / Medium devices (desktops, 992px and up) / /
+/* / Medium devices (desktops, 992px and up) / */
 @media (min-width: 992px) {
-  .card h6 {
+  #jumbotron h1 {
+    font-size: 60px;
+    font-weight: bolder;
+  }
+
+  #jumbotron h6 {
+    font-size: 15px;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  table {
+    font-size: 70%;
+  }
+
+  #first-container span,
+  #most-popular-albums span,
+  #featured-on span {
     font-size: 12px;
   }
 
@@ -670,13 +784,30 @@ footer .fa-volume-up:hover {
   }
 }
 
-/ / Large devices (large desktops, 1200px and up) */
+/* / Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .card h6 {
+  #jumbotron h1 {
+    font-size: 80px;
+    font-weight: bolder;
+  }
+
+  #jumbotron h6 {
+    font-size: 20px;
+    font-weight: bolder;
+    color: grey;
+  }
+
+  table {
+    font-size: 100%;
+  }
+
+  #first-container span,
+  #most-popular-albums span,
+  #featured-on span {
     font-size: 14px;
   }
 
-  h1 {
-    font-size: 45px;
+  h2 {
+    font-size: 35px;
   }
 }
