@@ -33,7 +33,7 @@ if (JSON.parse(localStorage.getItem("tracks")) !== null) {
 const addTrack = function (track) {
   if (
     JSON.parse(localStorage.getItem("tracks")) === null ||
-    JSON.parse(localStorage.getItem("tracks")).length < 87
+    JSON.parse(localStorage.getItem("tracks")).length < 97
   ) {
     localStorage.setItem("tracks", JSON.stringify(tracks));
     tracks.push(track);
@@ -410,3 +410,36 @@ addTrack(tphFifth7);
 addTrack(tphFifth8);
 addTrack(tphFifth9);
 addTrack(tphFifth10);
+
+let myTurn = new album(
+  "Lil Baby",
+  "My Turn",
+  "My Turn is the second studio album by American rapper Lil Baby. It was released on February 28, 2020, by Capitol Records, Motown Records, Wolfpack Music Group, and Quality Control Music.",
+  "28 February 2020",
+  "Hip-Hop/Rap",
+  "images/album/myTurn.png",
+  "3"
+);
+
+addAlbum(myTurn);
+let myTurn1 = new track("Get Ugly", "2:41", "My Turn");
+let myTurn2 = new track("Heatin Up", "2:59", "My Turn");
+let myTurn3 = new track("How", "3:28", "My Turn");
+let myTurn4 = new track("Grace", "3:18", "My Turn");
+let myTurn5 = new track("Woah", "3:36", "My Turn");
+let myTurn6 = new track("Live of My Closet", "3:38", "My Turn");
+let myTurn7 = new track("Same Thing", "3:49", "My Turn");
+let myTurn8 = new track("Emotionally Scarred", "3:31", "My Turn");
+let myTurn9 = new track("Commercial", "5:12", "My Turn");
+let myTurn10 = new track("Forever", "4:35", "My Turn");
+
+addTrack(myTurn1);
+addTrack(myTurn2);
+addTrack(myTurn3);
+addTrack(myTurn4);
+addTrack(myTurn5);
+addTrack(myTurn6);
+addTrack(myTurn7);
+addTrack(myTurn8);
+addTrack(myTurn9);
+addTrack(myTurn10);
