@@ -57,6 +57,7 @@ lastTr.innerHTML = `<th scope="row"></th>
                   <td></td>
                   <td></td>
                   <td><button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">Add Track</button></td>
+                  <td></td>
                   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                       <div class="modal-content">
