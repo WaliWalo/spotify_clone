@@ -46,8 +46,13 @@ body {
 }
 
 #active {
-  background: #282828;
   color: #fff !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #363b41;
 }
 
 .icon {
