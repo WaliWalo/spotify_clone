@@ -91,8 +91,7 @@ const addPlayList = function () {
     rating
   );
   addPlaylist(newAlbum);
-
-  populateLibrary();
+  location.reload();
 };
 populateAlbums();
 populateLibrary();
