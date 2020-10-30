@@ -1,5 +1,6 @@
 const populateAlbums = function () {
   let albumDiv = document.querySelector("#v-pills-home>div");
+
   // ROW TITLE
   let rowTitle = document.createTextNode("#THROWBACKTHURSDAY");
   let rowTitleDiv = document.createElement("div");
@@ -93,8 +94,5 @@ const addPlayList = function () {
 
   populateLibrary();
 };
-
-window.onload = function () {
-  populateAlbums();
-  populateLibrary();
-};
+populateAlbums();
+populateLibrary();
