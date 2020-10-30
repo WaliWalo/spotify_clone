@@ -100,47 +100,50 @@
 
 
   <div class="page-content head overflow-hidden" id="content">
-    <header class="sticky-top">
-
-      <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden">
-      <label for="checkbox4">
-        <div class="hamburger hamburger4" id="sidebarCollapse">
-          <span class="bar bar1"></span>
-          <span class="bar bar2"></span>
-          <span class="bar bar3"></span>
-          <span class="bar bar4"></span>
-          <span class="bar bar5"></span>
-        </div>
-      </label>
+    <header class="sticky-top d-flex justify-content-between">
 
 
-      <div class="container d-flex">
-        <div class="arrows d-flex mt-3">
-          <i class="arrow fas fa-arrow-left"></i>
-          <i class="arrow fas fa-arrow-right"></i>
+      <div class="burger-container">
+        <input type="checkbox" id="checkbox4" class="checkbox4 visuallyHidden" />
+        <label for="checkbox4">
+          <div class="hamburger hamburger4" id="sidebarCollapse">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+            <span class="bar bar4"></span>
+            <span class="bar bar5"></span>
+          </div>
+        </label>
+      </div>
 
-        </div>
+      <div>
+        <div class="container arrows d-flex">
+          <div class="d-flex mt-3">
+            <i class="arrow fas fa-arrow-left"></i>
+            <i class="arrow fas fa-arrow-right"></i>
+          </div>
 
-        <div class="d-flex justify-content-end m-2">
-          <button class="btn text-white mr-2 rounded-pill py-0 border border-white upgrade">
-            Upgrade Now
-          </button>
-
-          <div class="dropdown">
-            <button class="user-btn rounded-pill pl-1 btn text-white dropdown-toggle pb-0" type="button"
-              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <div class="rounded-circle d-inline-block mr-2 mt-1" id="user-image"></div>
-              <div class="d-inline-block">
-                <span class="user-name">Hung Jin</span>
-              </div>
+          <div class="d-flex justify-content-end m-2">
+            <button class="btn text-white mr-2 rounded-pill py-0 border border-white upgrade">
+              Upgrade Now
             </button>
 
-            <div class="dropdown-menu bg-dark nav-color" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="login.html">Login</a>
-              <a class="dropdown-item" href="#">Profile</a>
-              <div class="drop-divider"></div>
+            <div class="dropdown">
+              <button class="user-btn rounded-pill pl-1 btn text-white dropdown-toggle pb-0" type="button"
+                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="rounded-circle d-inline-block mr-2 mt-1" id="user-image"></div>
+                <div class="d-inline-block">
+                  <span class="user-name">Hung Jin</span>
+                </div>
+              </button>
 
-              <a class="dropdown-item" href="#">Logout</a>
+              <div class="dropdown-menu bg-dark nav-color" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="login.html">Login</a>
+                <a class="dropdown-item" href="#">Profile</a>
+                <div class="drop-divider"></div>
+
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
             </div>
           </div>
         </div>
@@ -431,7 +434,7 @@
             upgrade.classList.toggle('hide');
 
             for (i = 0; i < arrow.length; i++) {
-              return arrow[i].classList.toggle('hide');
+              arrow[i].classList.toggle('hide');
 
             }
 
