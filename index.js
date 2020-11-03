@@ -144,6 +144,27 @@ async function deezerSearchAsync(query) {
     console.log(e);
   }
 }
+
+async function deezerTrack(query) {
+  try {
+    const response = await fetch(
+      `https://rapidapi.p.rapidapi.com/album/${query}`,
+      {
+        method: "GET",
+        headers: {
+          "x-rapidapi-key":
+            "db388dbec5mshc59db4d245728fep1c2998jsna21051d70dc4",
+          "x-rapidapi-host": "deezerdevs-deezer.p.rapidapi.com",
+        },
+      }
+    );
+    const data = await response.json();
+    return data;
+  } catch (e) {
+    console.log(e);
+  }
+}
+
 async function loadEminem() {
   const { data } = await deezerSearchAsync("eminem");
   let albumDiv = document.querySelector("#v-pills-home>div");
@@ -325,6 +346,13 @@ async function listAlbum() {
   );
   albumDiv.appendChild(albumRow);
   for (let i = 0; i < data.length; i++) {
+    const track = await deezerTrack(data[i].album.id);
+    //console.log(track.tracks.data);
+    let tracks = [];
+    for (let j = 0; j < track.tracks.data.length; j++) {
+      tracks.push(track.tracks.data[j].title);
+    }
+    console.log(tracks);
     let albumCol = document.createElement("div");
     albumCol.classList.add("col");
     albumCol.innerHTML = `<div class="card mx-auto" style="width: 15 rem">
@@ -351,6 +379,7 @@ async function listAlbum() {
                                     <source src="${data[i].preview}" type="audio/mpeg">
                                   Your browser does not support the audio element.
                                   </audio>
+                                  ${tracks}
                                 </div>
                                 <div class="modal-footer">
                                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
