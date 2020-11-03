@@ -152,7 +152,10 @@
 
       <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
         <!-- albums -->
-        <div class="albums px-5"></div>
+        <div class="albums px-5">
+        </div>
+        <button class="btn btn-dark" onclick="listAlbum()">List Albums</button>
+
       </div>
       <div class="tab-pane fade" id="v-pills-library" role="tabpanel" aria-labelledby="v-pills-library-tab">
         <div class="albums px-5">
@@ -270,7 +273,6 @@
 
     window.onload = function () {
       let arrow = document.querySelectorAll("i.arrow");
-      console.log(arrow);
       let upgrade = document.querySelector(".upgrade");
       let hamburger = document.querySelector(".hamburger");
       let nav = document.querySelector("nav.active");
